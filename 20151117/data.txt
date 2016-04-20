@@ -1,0 +1,67 @@
+Array ( 
+
+[authId] => 系统管理员 
+[login_count] => admin
+ [xgdSessionId] => admin 
+ [cUserNo] => admin 
+ [WEB_ENVIRONMENT] => 5 
+ [SYSTEM_FLAG] => 2 
+ 
+ ) 
+ 
+ 
+ ===============================================
+ 
+ Array
+(
+    [errorCode] => 0
+    [errorMessage] => SUCCESS
+    [data] => Array
+        (
+            [1] => Array
+                (
+                    [0] => add
+                    [1] => pay
+                    [2] => w34
+                )
+
+            [0] => Array
+                (
+                    [0] => *
+                    [1] => 1
+                    [2] => 2
+                    [3] => 22
+                    [4] => 3
+                    [5] => 33
+                    [6] => 4
+                    [7] => 8888
+                    [8] => 9
+                    [9] => D
+                    [10] => QQ
+                    [11] => b
+                    [12] => c
+                    [13] => dd
+                    [14] => dddd
+                    [15] => e
+                    [16] => h
+                    [17] => k
+                    [18] => kk
+                    [19] => l
+                    [20] => lla
+                    [21] => mm
+                    [22] => n
+                    [23] => qqq
+                    [24] => r
+                    [25] => t
+                    [26] => v
+                    [27] => w
+                    [28] => x
+                    [29] => z
+                    [30] => 默认组
+                )
+
+        )
+
+    [pageNo] => 0
+    [pageSize] => 0
+    [totalPage] => 0

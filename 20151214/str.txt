@@ -1,0 +1,6 @@
+./ChangeLog.old:        * Created do_pragma_op(), de_stringize(), devide_line(), putout(),
+Binary file ./src/main.o matches
+Binary file ./src/.libs/libmcpp.a matches
+./src/main.c:static void     devide_line( char * out);
+./src/main.c:        devide_line( out);              /* Devide a too long line   */
+./src/main.c:static void devide_line(

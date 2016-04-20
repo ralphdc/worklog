@@ -1,0 +1,53 @@
+Array
+(
+    [0] => Array
+        (
+            [id] => 5548
+            [elemName] => 12121etew
+            [dealMode] => 0
+            [respWarnTimes] => 1
+            [respTestTimes] => 1
+            [flowInterval] => 1
+            [msgNum] => 0
+            [resId] => 2021
+            [resName] => 硬件
+            [status] => 1
+            [start] => 
+            [end] => 
+            [currMode] => 1
+            [remarks] => 这是一个乱码测试a
+            [priority] => 2
+        )
+
+    [1] => Array
+        (
+            [id] => 0086
+            [elemName] => 数据库中间件告警
+            [dealMode] => 0
+            [respWarnTimes] => 0
+            [respTestTimes] => 0
+            [flowInterval] => 0
+            [msgNum] => 0
+            [resId] => 
+            [resName] => 
+            [status] => 1
+            [start] => 2015-09-01 14:40:49
+            [end] => 2015-09-09 14:41:02
+            [currMode] => 1
+            [remarks] => 
+            [priority] => 2
+        )
+
+    [2] => Array
+        (
+            [id] => 0085
+            [elemName] => 交易容器告警
+            [dealMode] => 0
+            [respWarnTimes] => 0
+            [respTestTimes] => 1
+            [flowInterval] => 30
+            [msgNum] => 100
+            [resId] => 
+            [resName] => 
+            [status] => 1
+            [start] => 

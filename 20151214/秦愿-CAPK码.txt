@@ -1,0 +1,353 @@
+董超 15:54
+兄弟
+秦愿 15:55
+?
+董超 15:56
+发给接口的是一个json格式的字符串 ？
+秦愿 15:56
+en 
+对啊
+董超 15:56
+要不要加前缀
+秦愿 15:57
+不要啊
+董超 15:57
+还是直接把一个json格式化的字符串发过去
+秦愿 15:57
+就是邮件里面的格式
+json字符串
+字符串形式
+你那个接口，别的服务已经调用过了，就是直接传递 json格式的字符串 接口
+董超 15:57
+好的
+秦愿 15:57
+json格式的字符串
+董超 15:58
+我待会儿测下
+秦愿 15:58
+hao 
+其实，我这个接口，不只是给你们php用
+其他的服务，也在调用
+董超 15:59
+好的
+董超 16:02
+我现在要测试了
+你那里能看到结果吗
+连接的接口地址是 ：  http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+秦愿 16:03
+好的
+你发
+我正在监控
+董超 16:05
+OK
+董超 16:08
+收到了吗
+秦愿 16:09
+415
+你没有请求成功
+post方式啊
+POST
+172.20.0.200 是你那边机器吧？
+HTTP 415 错误 – 不支持的媒体类型(Unsupported media type) 
+看看是否json格式
+董超 16:14
+ERR: ////////////////////////////// request_by_mpay post is {"merchno":"480440354510001","termno":"20130052"}
+
+[ 2015-12-14T16:08:07+08:00 ] 127.0.0.1 /index.php/Service/Operatmember/mpay
+
+ERR: ////////////////////////////// URL post is http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+
+[ 2015-12-14T16:08:07+08:00 ] 127.0.0.1 /index.php/Service/Operatmember/mpay
+
+ERR: request_by_mpay-- file_get_contents data is
+
+好的 那我再试试
+你是说 post方式提交数据
+秦愿 16:15
+en
+董超 16:15
+那我改下代码
+董超 16:20
+稍等哈
+此对话将保存在 Lync 中的“对话”选项卡上和 Outlook 的“对话历史记录”文件夹中。
+董超 16:34
+request_by_other_mpay response is {"respCode":"success","respMsg":null,"success":true}
+这个是你返回的吧
+秦愿 16:36
+en
+TradeTypeSyncReq [queryCond=null, merchno=48044035451
+0001, termno=20130052, menuid=null]
+
+这个商户、终端是你发的吧？
+董超 16:37
+是的
+秦愿 16:37
+怎么断开连接的？
+董超 16:37
+啊？
+什么问题
+秦愿 16:38
+连接断开
+2015-12-14 16:33:40,604 [qtp1492463108-23] DEBUG org.eclipse.jetty.io.nio.ChannelEndPoint - Exception while filling
+java.io.IOException: Connection reset by peer
+        at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:218) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.read(IOUtil.java:191) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:359) ~[?:1.7.0_09-icedtea]
+        at org.eclipse.jetty.io.nio.ChannelEndPoint.fill(ChannelEndPoint.java:235) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.fill(SelectChannelEndPoint.java:368) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.fill(HttpParser.java:1044) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:280) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConn
+你那边代码，发送完后，要写断开网络连接
+写了吧？
+董超 16:39
+我这里是一种调用接口的方式
+已经写终结代码了
+你看现在还有什么问题
+秦愿 16:42
+你再发个
+我看看
+董超 16:42
+OK
+能发相同的数据吗
+秦愿 16:42
+可以
+董超 16:42
+好的
+秦愿 16:42
+N次都可以
+呵呵。。
+董超 16:42
+:P
+秦愿 16:43
+java.io.IOException: Connection reset by peer
+        at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:218) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.read(IOUtil.java:191) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:359) ~[?:1.7.0_09-icedtea]
+        at org.eclipse.jetty.io.nio.ChannelEndPoint.fill(ChannelEndPoint.java:235) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.fill(SelectChannelEndPoint.java:368) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.fill(HttpParser.java:1044) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:280) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at java.lang.Thread.run(Thread.java:722) [?:1.7.0_09-icedtea]
+2015-12-14 16:43:11,067 [qtp1492463108-21] DEBUG org.eclip
+董超 16:43
+发了
+哦
+那现在是什么问题
+秦愿 16:43
+好奇怪，你没法一次，我这边就总显示这个错误
+好奇怪，你每发一次，我这边就总显示这个错误
+董超 16:44
+这个有影响吗
+必须要把这个报错解决吗
+我百度一下哈
+秦愿 16:46
+java.io.IOException Connection Reset by Peer
+
+
+        java.io.EOFException Connection Reset by Peer
+(Solaris)
+        java.io.EOFException: Broken pipe
+这些错误消息通常发生在使用servlet的时候，如果客户端发出了一个HTTP 请求然后在浏览器上执行一下集中操作，Tomcat就有可能产生这种错误信息
+
+
+*	点击停止或者关闭浏览器
+*	点击刷新或者用F5命令刷新页面
+*	发送一个新的HTTP 请求
+
+当用户进行以上动作的时候，就是对先前进行的HTTP请求的阻断或者终止，Tomcat检测到并且恢复了这个被阻断的HTTP请求，然后在log里面写入IOException。
+
+我也在百度
+董超 16:47
+我这里的执行是一气呵成
+秦愿 16:47
+都一样，我这边也处理完了
+但是，他妈的，就是处理完后，然后抛这个异常
+董超 16:47
+比如 当新增数据完毕以后 前端界面接到成功通知 然后向后端发一个请求  收到请求后再调用你的接口
+秦愿 16:47
+其实，不影响业务
+董超 16:47
+:P
+秦愿 16:47
+但是，感觉不爽啊
+董超 16:48
+秦哥  很认真哦(OK)
+秦愿 16:48
+jsp他们调用我的，没有这个问题
+你这个php，我不知道，是要做什么处理嘛？
+董超 16:48
+我以前用相同的方法调用其他java提供的接口 
+这个方法一直在用
+这样吧  我修改一个请求参数
+秦愿 16:50
+由于数据库服务器重启过，你的App Server没有重启，又再使用连接池的时候，也会出这个错。 
+等下，我重启一下试试
+董超 16:51
+嗯
+请求方法用的HTTP1.1版本 
+以前没有这个参数
+秦愿 16:54
+1.0
+用1.0
+董超 16:54
+哦
+秦愿 16:54
+1.1 http好像是长连接
+不会断开连接
+董超 16:54
+OK
+那我再试试？
+秦愿 16:54
+恩
+董超 16:59
+POST http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno <http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno>  HTTP/1.0 
+Host: 172.20.4.1:9000 
+Accept: */* 
+Connection: Keep-Alive 
+Content-type: application/json 
+Content-Length: 49   
+
+{"merchno":"480440354510001","termno":"20130052"}
+
+秦愿 16:59
+ue,i=0r}-{AsyncHttpConnection@740fa6b3,g=HttpGenerator{s=4,h=0,b=0,c=-1},p=HttpParser{s=0,l=2,c=49},r=1}
+2015-12-14 16:57:16,739 [qtp2024786514-21] DEBUG org.eclipse.jetty.io.nio.ChannelEndPoint - Exception while filling
+java.io.IOException: Connection reset by peer
+        at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:218) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.read(IOUtil.java:191) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:359) ~[?:1.7.0_09-icedtea]
+        at org.eclipse.jetty.io.nio.ChannelEndPoint.fill(ChannelEndPoint.java
+董超 16:59
+这里的http请求 已经开启了 keep-alive模式
+秦愿 16:59
+Connection: Keep-Alive ，能否改下
+试试
+妈的，搞不清楚原因，只能试了
+董超 17:00
+稍等  我改下
+现在的目标是要把keepalive去掉
+秦愿 17:01
+恩
+此对话将保存在 Lync 中的“对话”选项卡上和 Outlook 的“对话历史记录”文件夹中。
+董超 17:16
+17:14:33:5126 Fiddler.Network.ProtocolViolation - [#1] No Connection: close, no Content-Length. No way to tell if the response is complete.  
+
+17:14:59:7796 Fiddler.Network.ProtocolViolation - [#2] No Connection: close, no Content-Length. No way to tell if the response is complete.
+
+17:15:43:6916 Fiddler.Network.ProtocolViolation - [#3] No Connection: close, no Content-Length. No way to tell if the response is complete.
+
+我这里已经设置了短链接  但是报这个错误
+秦愿 17:17
+2015-12-14 17:15:42,662 [qtp2024786514-24] DEBUG org.eclipse.jetty.io.nio.ChannelEndPoint - Exception while filling
+java.io.IOException: Connection reset by peer
+        at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:218) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.IOUtil.read(IOUtil.java:191) ~[?:1.7.0_09-icedtea]
+        at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:359) ~[?:1.7.0_09-icedtea]
+        at org.eclipse.jetty.io.nio.ChannelEndPoint.fill(ChannelEndPoint.java:235) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.fill(SelectChannelEndPoint.java:368) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.fill(HttpParser.java:1044) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:280) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.17.v20150415.jar:8.1.17.v20150415]
+        at java.lang.Thread.run(Thread.java:722) [?:1.7.0_09-icedtea]
+董超 17:18
+就是关闭连接的时候报错
+秦愿 17:18
+妈的， 神奇了
+网上搜下，怎么解决
+董超 17:23
+帮看下 还有没有
+秦愿 17:24
+再发个
+好像没有了
+再发个
+董超 17:24
+OK
+发了
+秦愿 17:25
+good，牛逼
+
+怎么解决的，是啥原因？
+没有了
+董超 17:25
+就是按照你刚才说的方法 改成短链接
+秦愿 17:26
+你不是刚才改了嘛
+没改彻底？
+董超 17:26
+改错文件了
+应该使用1.0
+秦愿 17:26
+靠
+哦
+行了，还要测试一下，我停止
+董超 17:26
+那再来一次
+秦愿 17:26
+现在停掉？
+董超 17:26
+如果没问题 就应该可以了吧
+秦愿 17:26
+恩，我现在停到
+董超 17:27
+为什么
+秦愿 17:27
+因为，防止我们服务挂了，不能影响用户操作php界面啊
+你就等于忽略这个异常
+董超 17:27
+你停掉 然后我再来一次 ？
+秦愿 17:27
+恩
+董超 17:27
+OK
+秦愿 17:27
+停掉了
+董超 17:27
+好的
+秦愿 17:27
+你发发请求，看看你那边效果
+董超 17:28
+嗯
+秦愿 17:28
+理论应该照样都成功，不影响用户操作php
+董超 17:28
+我这里没有异常  只是日志有记录
+秦愿 17:29
+ok
+good
+,过了
+董超 17:29
+恶补
+嗯
+秦愿 17:30
+联调完了，只等到时我们真要提测时，我会通知你
+董超 17:30
+那我这里可以提测吗
+秦愿 17:30
+en
+现在不用提测
+我们这个鸟项目，等领导通知，到时一起提测
+反正，今年是不会提测了
+估计是年后了，你那边，这些代码，要保留好
+董超 17:32
+好的

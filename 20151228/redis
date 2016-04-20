@@ -1,0 +1,8 @@
+<?php
+
+$redis = new Redis();
+$redis->connect('127.0.0.1','6379');
+//$fl = $redis->smembers('Flower');
+$redis->hmset('UUUU',array('u1'=>'fengyunsanjin','u2'=>'ligangchao','u3'=>'nanmen','u4'=>'skdjfdskf','u5'=>'history'));
+//print_r($fl);
+exit;

@@ -1,0 +1,316 @@
+<link href="__PUBLIC__/dwz/themes/css/jtopo.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/dwz/js/jtopo-0.4.8-min.js" type="text/javascript"></script>
+<div class="container_box" id="container_box" style="">
+		<div id="toolContent">
+			<div class="panelBar" style="height:33px;">
+				<ul class="toolBar">
+					<li><a class="add" href="javascript:void(0)" title="新建拓扑图" ><span onclick="xgdCreateNode()">新增节点</span></a></li>
+					<li><a  title="确实要删除选中记录吗？" href="javascript:void(0)" class="delete"><span onclick="xgdClearScene()">清空画布</span></a></li>
+					<li><a  href="javascript:void(0)" class="reflash"><span>刷新</span></a></li>
+					<li><a class="save" href="javascript:void(0)" title="保存" ><span onclick="xgdSave()">保存</span></a></li>
+					<li class="line">line</li>
+				</ul>
+			</div>
+		</div>
+		<div id="stageSc">
+			<canvas width="1" height="1000" id="canvas"></canvas>	
+		</div>
+		<div class="rmenue" id="contextmenu">
+			<ul>
+				<li><a href="#">编辑节点</a></li>
+				<li><a href="#" onclick="deleteNode();">删除节点</a></li>
+			</ul>
+		</div>
+
+		<div class="rmenue" id="linkmenu">
+			<ul>
+				<li><a href="#" onclick="deleteLink();">删除连线</a></li>
+			</ul>
+		</div>
+</div>
+	<script type="text/javascript">
+
+	
+			var stage 	= 	null;
+			var scene 	= 	null;
+			var node	=	null;
+			var newX	=	30;
+			var newY	=	30;
+
+			//新建节点的宽、高；
+			var nodeWidth	=	70;
+			var nodeHeight	=	70;	
+			var nodeColor	=	'255，255，255';
+			var nodeImage	=	'/Public/Images/jtopo/node2.png';
+			var nodeType	=   'normal';
+
+			//提示文字的坐标；
+			var msgX		=	10;
+			var msgY		=	10;
+			//提示文字的颜色；
+			var msgColor	=	'251,242,9';
+			var msgFont		=	'14px bold';
+			//定义创建节点初始化坐标；
+			var beginNode		=	null;
+			var endNode			=	null;
+
+
+
+			//创建存储对象；
+			var JPStore = 	null;
+			//新建节点信息初始化；
+			if(window.localStorage){
+				JPStore	=	window.localStorage;
+			}else{
+				$("#container_box").prepend("<h1>您的浏览器不支持HTML5,请更换！</h1>");
+			}
+
+
+			//创建临时节点，定义连线；
+			var tempNodeA		=	new JTopo.Node('TemA');
+			var tempNodeB		=	new JTopo.Node('TemB');
+
+			tempNodeA.setSize(nodeWidth,nodeHeight);
+			tempNodeB.setSize(nodeWidth,nodeHeight);
+
+
+			var link			=	new JTopo.Link(tempNodeA,tempNodeB);
+			
+
+
+			function _initStage()
+			{
+				var containerWidth = Number($("#container_box").width());
+				console.log(containerWidth);
+				var canvasWidth = containerWidth;
+				var canvasHeight = parseInt(containerWidth/1.6);
+				$("#canvas").width(canvasWidth);
+				$("#canvas").height(canvasHeight);
+				
+				
+				 var canvas = $("#canvas")[0];
+				 stage = new JTopo.Stage(canvas);
+				 scene 	= new JTopo.Scene(stage);
+				
+				// scene.background='/Public/Images/jtopo/enterdesk.png';
+				 //scene.backgroundColor='0,0,0';
+				
+				 scene.addEventListener("dbclick",function(e){
+				 	if(e.button == 2){
+			            scene.remove(link);
+			            return;
+			        }
+			        if(e.target != null && e.target instanceof JTopo.Node){
+			            if(beginNode == null){
+			                beginNode = e.target;
+			                scene.add(link);
+			                tempNodeA.setLocation(e.x, e.y);
+			                tempNodeB.setLocation(e.x, e.y);
+			            }else if(beginNode !== e.target){
+			                var endNode = e.target;
+			                var lk = new JTopo.Link(beginNode, endNode);
+			                lk.lineWidth 		= 	3;
+							lk.bundleGap 		= 	20;
+							lk.textOffsetY 		= 	3;
+							lk.arrowsRadius 	= 	15;
+							lk.strokeColor		=	'255,255,0';
+
+							//添加连接右键菜单；
+							lk.addEventListener('mouseup',function(event){
+								//右键处理函数；
+								if(event.button == 2){
+									$("#linkmenu").css({
+									top: event.pageY,
+									left: event.pageX
+								}).show();
+								}
+							})
+			                scene.add(lk);
+			                beginNode = null;
+			                endNode = null;
+			                scene.remove(link);
+			            }else{
+			                beginNode = null;
+			            }
+			        }else{
+			        	beginNode = null;
+			            scene.remove(link);
+			        }
+				 })
+				
+	    
+			    scene.mousedown(function(e){
+			        if(e.target == null || e.target === beginNode || e.target === link){
+			            scene.remove(link);
+			        }
+
+			        if($("#contextmenu").is(":visible")){
+			        	$("#contextmenu").hide();
+			        }
+			        if($("#linkmenu").is(":visible")){
+			        	$("#linkmenu").hide();
+			        }
+			    });
+
+			    scene.mousemove(function(e){
+			        tempNodeB.setLocation(e.x, e.y);
+				});
+				 
+			}
+
+			//新增节点；
+			function xgdCreateNode()
+			{
+				if(!scene || !JPStore) return false;
+				
+				
+				var texts 	=	String(new Date().getTime());
+				
+				var nodeText		=	'Node_'+texts;
+			    var nodeObj 		=	new JTopo.Node(nodeText);
+				nodeObj.fillColor	=	nodeColor;
+				
+				if(newX > 200){
+					newX = 30;
+				}
+
+				nodeObj.setLocation(newX ,newY);
+				nodeObj.setSize(nodeWidth,nodeHeight);
+				//nodeObj.setImage(nodeImage);
+				//nodeObj.zIndex = 20;
+
+				//初始化节点信息,存入本地;
+				var json_obj = {'name':nodeText,'px':newX,'py':newY,'type':nodeType,'width':nodeWidth,'height':nodeHeight,'color':nodeColor};
+				var json_str = JSON.stringify(json_obj);
+				JPStore.setItem(nodeText,json_str);
+
+				nodeObj.addEventListener('mouseup',function(event){
+					 if(event.button == 0){
+					 	//左键处理函数；
+					 	//拖拽，覆盖原有值
+					 	
+					 	var monitor_json = {'name':this.text,'px':this.x,'py':this.y,'type':nodeType,'width':nodeWidth,'height':nodeHeight,'color':nodeColor};
+					 	var monitor_json_str = JSON.stringify(monitor_json);
+					 	JPStore.setItem(String(this.text),monitor_json_str);
+
+					 }else if(event.button == 2){
+					 	//右键处理函数；
+					 	$("#contextmenu").css({
+							top: event.pageY,
+							left: event.pageX
+						}).show();
+					}
+				})
+
+
+				//JPStore
+				
+				if(scene){
+					scene.add(nodeObj);
+					beginNode = null;
+					newX += 20;
+				}
+			}
+
+			//删除节点；
+			function xgdRemoveNode()
+			{
+				if(!scene) return false;
+
+				var i 				=	0;
+				var displayedNoeds 	=	scene.getDisplayedNodes();	//获取场景中可见并绘制出来的Node对象；
+				var displayedLength	=	displayedNoeds.length;		//获取场景中可见并绘制出来的Node对象个数；
+
+				if(displayedLength){
+					scene.remove(displayedNoeds[displayedLength - 1]);
+				}
+
+			}
+			
+			//清除界面；
+			function xgdClearScene()
+			{
+				if(scene){
+					scene.clear();
+				}
+			}
+
+			//删除节点；
+			function deleteNode()
+			{
+				if(!scene) return false;
+
+				var sNode = scene.selectedElements;
+				//console.log(sNode); return;
+				if(sNode[0] instanceof JTopo.Node){
+					
+					scene.remove(sNode[0]);
+				}else{
+					//console.log('-------------');
+					createTextNode('请先选择节点，然后点击删除！');
+				}
+			}
+
+			//删除连线；
+			function deleteLink()
+			{
+				if(!scene) return false;
+
+				var lkNode = scene.selectedElements;
+				if(lkNode[0] instanceof JTopo.Link){
+					scene.remove(lkNode[0]);
+				}else{
+					//console.log('-------------');
+					createTextNode('请先选择连线，然后点击删除！');
+				}
+			}
+
+			//创建提示；
+			function createTextNode(text)
+			{
+				if(!scene) return false;
+
+				var msgNode	=	new JTopo.TextNode(text);
+				msgNode.zIndex++;
+				msgNode.setBound(msgX,msgY);
+				msgNode.fontColor = msgColor;
+				msgNode.font = msgFont;
+				scene.add(msgNode);
+
+				setTimeout(deleteTextNode(msgNode),2000);
+			}
+
+			function deleteTextNode(textnode)
+			{
+				if(!scene) return false;
+				return function(){
+					scene.remove(textnode);
+				}
+			}
+
+			function xgdSave()
+			{
+
+			}
+
+			/* 节点--右键菜单处理 */	
+			$("#contextmenu a").click(function(){
+				
+				$("#contextmenu").hide();
+
+			})
+
+			/* 连线--右键菜单处理 */	
+			$("#linkmenu a").click(function(){
+				
+				$("#linkmenu").hide();
+
+			})
+
+
+			_initStage();
+
+
+
+
+	</script>

@@ -1,0 +1,14 @@
+Array ( 
+
+[id] => 17461 
+[ip] => 172.50.50.58
+ [hostName] => test9 
+ [room] => GDC 
+ [cabinet] => 机柜1 
+ [product] => 
+ [os] => win12
+ [vm] => 1 
+ [environment] => 1 
+ [serverModel] => 2 
+ 
+ ) 

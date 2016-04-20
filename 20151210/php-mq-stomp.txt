@@ -1,0 +1,320 @@
+activeMQ+stomp+php实现消息队列
+
+一、ActiveMQ的安装与配置
+
+1、安装JDK
+
+2、安装ActiveMQ
+
+wget http://mirror.esocc.com/apache/activemq/apache-activemq/5.8.0/apache-activemq-5.8.0-bin.tar.gz
+
+3、配置ActiveMQ，使其支持stomp
+
+在配置文件/usr/local/activemq/conf/activemq.xml，添加
+
+<transportConnectors>
+            <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
+            <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireformat.maxFrameSize=104857600"/>
+            <transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireformat.maxFrameSize=104857600"/>
+            <transportConnector name="stomp" uri="stomp://localhost:61613"/>
+        </transportConnectors>
+
+4、启动ActiveMQ
+
+/usr/local/activemq/bin/activemq start
+
+二、安装php的stomp扩展
+
+查看最新的stomp
+
+http://pecl.php.net/package/stomp
+
+wget http://pecl.php.net/get/stomp-1.0.5.tgz
+
+tar -zxf  stomp-1.0.5.tgz
+
+/usr/bin/phpize5
+
+./configure --enable-stomp --with-php-config=/usr/bin/php-config5
+
+make & make install
+
+在php.ini中添加
+
+extension = stomp.so
+
+三、php---实现定时从消息队列里取出数据
+
+从队列里取出数据（此程序以守护进行的方式运行），代码如下：
+
+<?php
+/**
+ * ActiveMQ Client
+ *
+ * @author yiluxiangbei<2498038528@qq.com>
+ */
+
+class MessageQueueApp extends BaseAppEx
+{
+
+    /**
+     * Default prefetch size
+     *
+     * @var int
+     */
+    public $prefetchSize = 1000;
+    /**
+     * sleep of time (unit sencond)
+     * 
+     * @var int
+     */
+    private $_sleepIntval = 60;
+
+    private $_stomp    = null;
+
+    private $_mysqli   = null;
+
+    public function run()
+    {
+        while(true){
+            try{
+                //connecting database
+                try {
+                } catch (Exception $ex) {
+                        die('MySQL connection failed: '.$ex->getMessage());
+                }
+                //connecting activemq
+                try {
+                    $this->_stomp = new Stomp($this->conf['MessageQueue']['stompUri']);
+                } catch (StompException $e) {
+                    die('Connection failed: '.$e->getMessage());
+                }
+
+                $this->_stomp->subscribe($this->conf['MessageQueue']['queueUri'], array('activemq.prefetchSize' => $this->prefetchSize));
+
+                $frame = null;
+                                $data = array();
+                while (TRUE == $this->_stomp->hasFrame())
+                {
+                    $temp = array();
+                        $frame = $this->_stomp->readFrame();
+                    if (FALSE !== $frame)
+                    {
+                                                //file_put_contents(ROOT_PATH.'/cache/MQ', $frame->body."\n", FILE_APPEND);
+                        //operate dataBase
+                        $temp = json_decode($frame->body, true);
+
+                                        $data = array_merge($data, $temp);
+
+                        $this->_stomp->ack($frame);
+
+                    } else {
+                        continue;
+                    }
+                }
+
+                $result = $this->_handleData1($data);
+
+            }catch (Exception $e){
+                echo "Exception is: ".$e->getMessage()."\n\n";
+            }
+            echo "Statistic Over, {$this->_sleepIntval} seconds to next statistics..\n\n";
+            $this->_stomp->unsubscribe($this->conf['MessageQueue']['queueUri']);
+            unset($this->_stomp);
+            $this->_mysqli->close();
+            sleep($this->_sleepIntval);
+        }
+    }
+
+    /*
+     * data to store(The three table is not related)
+     * 
+     * @param data array
+     * @return result bool
+     */
+    private function _handleData1($data)
+    {
+        $insert_1 = "INSERT INTO `msg1`(`info`, `time`) VALUES";
+        $insert_2 = "INSERT INTO `msg2`(`relateId`, `info`, `time`) VALUES";
+        $insert_3 = "INSERT INTO `msg3`(`relateId`, `info`, `time`) VALUES";
+        $count = count($data);
+
+        if (!empty($data)) {
+                $i = 0;
+                foreach ($data as $randId => $val) {
+                        if ($i == 0) {
+                                $insert_1 = $insert_1."('{$val[0][0]}', '{$val[0][1]}')";
+                                $insert_2 = $insert_2."(2, '{$val[1][0]}', '{$val[1][1]}')";
+                                $insert_3 = $insert_3."(3, '{$val[2][0]}', '{$val[2][1]}')";
+                        } else {
+                                $insert_1 = $insert_1.",('{$val[0][0]}', '{$val[0][1]}')";
+                                $insert_2 = $insert_2.",(2, '{$val[1][0]}', '{$val[1][1]}')";
+                                $insert_3 = $insert_3.",(3, '{$val[2][0]}', '{$val[2][1]}')";
+                        }
+
+                        $i++;
+                }
+        }
+        //echo $insert_1,PHP_EOL;
+        //echo $insert_2,PHP_EOL;
+        //echo $insert_3,PHP_EOL;
+        $success = TRUE;
+        $this->_mysqli->autocommit(0);
+
+        $this->_mysqli->query($insert_1);
+        echo $this->_mysqli->affected_rows,PHP_EOL;
+        if ($count != $this->_mysqli->affected_rows) {
+                $success = FALSE;
+        }
+
+        $this->_mysqli->query($insert_2);
+        echo $this->_mysqli->affected_rows,PHP_EOL;
+        if ($count != $this->_mysqli->affected_rows) {
+                $success = FALSE;
+        }
+
+        $this->_mysqli->query($insert_3);
+        echo $this->_mysqli->affected_rows,PHP_EOL;
+        if ($count != $this->_mysqli->affected_rows) {
+                $success = FALSE;
+        }
+
+        if ($success) {
+                $this->_mysqli->commit();
+        } else {
+                $this->_mysqli->rollback();
+        }
+
+        $this->_mysqli->autocommit(1);
+
+    }
+
+    /*
+     * data to store(The three table is related)
+     * 
+     * @param data array
+     * @return result bool
+     */
+    private function _handleData($data)
+    {
+                $this->_mysqli->commit();
+        } else {
+                $this->_mysqli->rollback();
+        }
+
+        $this->_mysqli->autocommit(1);
+
+    }
+
+    /*
+     * data to store(The three table is related)
+     * 
+     * @param data array
+     * @return result bool
+     */
+    private function _handleData($data)
+    {
+        $success = TRUE;
+
+        $this->_mysqli->autocommit(0);
+
+        $insert_1 = "INSERT INTO `msg1`(`info`, `time`) VALUES('{$data[0][0]}', '{$data[0][1]}')";
+        $result1 = $this->_mysqli->query($insert_1);
+        if (!$result1 || $this->_mysqli->affected_rows!=1) {
+                $success = FALSE;
+        }
+
+        $relateId = $this->_mysqli->insert_id;
+
+        $insert_2 = "INSERT INTO `msg2`(`relateId`, `info`, `time`) VALUES({$relateId},'{$data[1][0]}','{$data[1][1]}')";
+        $result2  = $this->_mysqli->query($insert_2);
+        if (!$result2 || $this->_mysqli->affected_rows!=1) {
+                $success = FALSE;
+        }
+
+        $insert_3 = "INSERT INTO `msg3`(`relateId`, `info`, `time`) VALUES({$relateId},'{$data[2][0]}','{$data[2][1]}')";
+        $result3  = $this->_mysqli->query($insert_3);
+        if (!$result3 || $this->_mysqli->affected_rows!=1) {
+                $success = FALSE;
+        }
+
+
+        if ($success) {
+                $this->_mysqli->commit();
+        } else {
+                $this->_mysqli->rollback();
+        }
+
+        $this->_mysqli->autocommit(1);
+
+        return $success;
+    }
+}
+?>
+
+
+
+将数据插入队列中
+
+<?php
+class DebugApp extends BaseAppEx
+{
+    /**
+         * test
+         */
+
+    public function index()
+    {
+
+        $randId = uniqid();
+        $time = date('Y-m-d H:i:s', time());
+
+        $data = array();
+
+        $data[$randId][0] = array('msg1', $time);
+        $data[$randId][1] = array('msg2', $time);
+        $data[$randId][2] = array('msg3', $time);
+
+        $data = json_encode($data);
+
+        $this->_sendMQ($data);
+    }
+    
+
+    private function _sendMQ($data)
+    {
+        try {
+            $stomp = new Stomp($this->conf['MessageQueue']['stompUri']);
+        } catch (StompException $e) {
+            //die('Connection failed: '.$e->getMessage());
+            throw new Exception($e->getMessage());
+        }
+
+        if (empty($data)) {
+            throw new Exception('Parameter must not be empty!');
+        }
+
+        $isSucc = $stomp->send($this->conf['MessageQueue']['queueUri'], $data, array('persistent' => 'true'));
+        if (false == $isSucc)
+        {
+            throw new Exception("$data send failed!");
+        }
+
+        unset($stomp);
+    }
+}
+?>
+
+
+
+四、参考资料
+
+http://activemq.apache.org/
+
+http://activemq.apache.org/version-5-getting-started.html
+
+http://activemq.apache.org/examples.html
+
+http://activemq.apache.org/contributing.html
+
+ActiveMQ+In+Action.pdf

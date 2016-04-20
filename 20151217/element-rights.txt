@@ -1,0 +1,55 @@
+Array
+(
+    [0] => Array
+        (
+            [elemId] => 0090
+            [type] => 2
+        )
+
+    [1] => Array
+        (
+            [elemId] => 0085
+            [type] => 2
+        )
+
+    [2] => Array
+        (
+            [elemId] => 0078
+            [type] => 2
+        )
+
+    [3] => Array
+        (
+            [elemId] => 0077
+            [type] => 1
+        )
+
+    [4] => Array
+        (
+            [elemId] => 0063
+            [type] => 2
+        )
+
+    [5] => Array
+        (
+            [elemId] => 0048
+            [type] => 2
+        )
+
+    [6] => Array
+        (
+            [elemId] => 0045
+            [type] => 2
+        )
+
+    [7] => Array
+        (
+            [elemId] => 0028
+            [type] => 1
+        )
+
+    [8] => Array
+        (
+            [elemId] => 0024
+            [type] => 2
+        )

@@ -1,0 +1,61 @@
+八、获取ICE分组信息
+输入：
+json={
+	"key":" service.weight.group.search",
+	"page":{"pageNo":"1","pageSize":"20"},
+	"data":{ 
+		“groupName”:””,
+		“desployEnv”：“5”，
+       "submitor":"admin"
+	  }
+	}
+输出：
+	{"errorCode":0,"errorMessage":"SUCCESS",
+"data":[{"groupName ":”****”, 
+"operaterPerson":"****",
+“groupName”:”*****”,
+"operaterTime":"****",
+"groupDescription":"***"	
+}],
+"pageNo":1,"pageSize":20,"totalPage":1,"total":1}
+九、创建ICE新组
+输入：
+json={
+	"key":" service.weight.group.create",
+	"data":{ 
+		“desployEnv”：“5”，
+“groupName”:”pay”,
+       “operaterPerson”:”admin”,
+       "groupDescription":"资金使用"
+	  }
+	}
+输出:
+{"errorCode":0,"errorMessage":"SUCCESS","data":"","pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+十、删除ICE组
+输入：
+json={
+	"key":" service.weight.group.delete",
+“groupName”:”pay”,
+“groupId”:”6”,
+	"data":{ 
+		“desployEnv”：“5”，
+	  }
+	}
+输出:
+{"errorCode":0,"errorMessage":"SUCCESS","data":"","pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+十一、批量删除ICE组
+输入：
+json={
+	"key":" service.weight.groupbatch.delete",
+ “groupId”:”6,10”,
+	"data":{ 
+		“desployEnv”：“5”
+	  }
+	}
+输出:
+{"errorCode":0,"errorMessage":"SUCCESS","data":"","pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+
+一共四个接口

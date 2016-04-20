@@ -1,0 +1,32 @@
+<?php
+
+
+$redis = new Redis();
+
+$conn = $redis->connect('127.0.0.1','6379');
+
+if($conn){
+	$i=0;
+//	while(true){
+//		sleep(1);
+		$i++;
+		$respose['id'] = uniqid();
+		$respose['v_ltl_status'] = uniqid();
+		$respose['ltl_time'] = uniqid();
+		$respose['ltl_reckon'] = uniqid();
+		$respose['ltl_cardno'] = uniqid();
+		$respose['card_type'] = uniqid();
+		$respose['card_name'] = uniqid();
+		$respose['ltl_cardflag'] = uniqid();
+		$respose['rsd_bicc'] = uniqid();
+		$respose['v_ltl_type'] = uniqid();
+		
+		$res_json =  json_encode(array('result'=>$respose));
+		
+		$redis->publish('XGD',$res_json);
+		//echo '数据已经发布'.$i.'<br/>';
+//	}
+}else{
+	echo '本地Redis无法连接！';
+	exit;
+}

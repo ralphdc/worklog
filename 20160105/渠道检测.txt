@@ -1,0 +1,37 @@
+array(3) {
+  [0] => array(6) {
+    ["channelName"] => string(14) "NAC_CUP_SZ_CHN"
+    ["channelID"] => string(2) "14"
+    ["channelServiceID"] => string(5) "11506"
+    ["instancesCount"] => int(1)
+    ["status"] => int(0)
+    ["InstanceStatus"] => array(1) {
+      [0] => array(10) {
+        ["channelID"] => string(2) "14"
+        ["channelName"] => string(14) "NAC_CUP_SZ_CHN"
+        ["channelServiceID"] => string(5) "11506"
+        ["consecutiveFailedTimes"] => int(0)
+        ["consecutiveSuccessedTimes"] => int(0)
+        ["failedCheckTimes"] => int(0)
+        ["host"] => string(17) "172.20.4.16:11506"
+        ["status"] => int(0)
+        ["successedCheckTimes"] => int(0)
+        ["totalTradeTimes"] => int(0)
+      }
+    }
+  }
+  [101] => array(5) {
+    ["channelName"] => string(14) "NAC_CUP_GZ_CHN"
+    ["channelID"] => string(1) "9"
+    ["channelServiceID"] => string(5) "11507"
+    ["instancesCount"] => int(0)
+    ["status"] => int(3)
+  }
+  [102] => array(5) {
+    ["channelName"] => string(14) "NAC_CUP_SH_CHN"
+    ["channelID"] => string(2) "15"
+    ["channelServiceID"] => string(5) "11505"
+    ["instancesCount"] => int(0)
+    ["status"] => int(3)
+  }
+}

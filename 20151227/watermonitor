@@ -1,0 +1,13 @@
+<?php
+
+	$wr = new Redis();
+	if($wr->connect('127.0.0.1','6379')){
+		
+		
+		while(true){
+			sleep(1);
+			$stamp = mktime();
+			$tmsStr = "0001\x01{$stamp}\x01{$stamp}\x016217007200033446519\x018\x01GoldenCard\x014\x019";
+			$wr->publish('tradelist',$tmsStr);
+		}
+	}

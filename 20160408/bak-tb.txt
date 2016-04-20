@@ -1,0 +1,464 @@
+<style type="text/css">
+	.warn{float:left;display:block;line-height: 20px; margin-top:5px; width: 22px; height: 20px;}
+	.warnnumber h1{padding-top: 4px;}
+	.info h1{margin-top: 6px;}
+
+	.t-con-1{float:left;}
+	.t-con-2{float:left;}
+	.t-con-3{float:left;}
+</style>
+
+<div class="pageContent">
+<!-- 
+	<div class="formBar">
+		<ul style="text-align:left">
+			<li><div class="buttonActive"><div class="buttonContent"><button onclick="goBack({$tpid})">返回上一页</button></div></div></li>
+		</ul>
+	</div>
+-->
+	<div class="nodeLeft" style="width:30%; float:left;">
+		<div class="tabs" currentIndex="0" eventType="click">
+			<div class="tabsHeader">
+				<div class="tabsHeaderContent">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>基本信息</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>资产信息</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabsContent info" style="height:300px;">
+				<div class="basic">
+					<table class="list" width="100%">
+						<tbody>
+							<tr>
+								<td class="center" width="20%"><h1>ID：</h1></td>
+								<td>{$nodeinfo['id']}</td>
+							</tr>
+							<tr>
+								<td class="center" width="20%"><h1>主机名：</h1></td>
+								<td>{$nodeinfo['hostName']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>IP地址：</h1></td>
+								<td>{$nodeinfo['ip']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>系统启动时间：</h1></td>
+								<td>{$server['sysUpTime']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>系统状态：</h1></td>
+								<td>{$server['sysStatus']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>系统描述：</h1></td>
+								<td>{$server['sysDescr']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>主机类型：</h1></td>
+								<td>
+								<?php
+									if($nodeinfo['vm'] == 1):
+								?>
+								物理机
+								<?php else: ?>
+								虚拟机
+								<?php endif;?>
+								</td>
+							</tr>
+							<?php if($nodeinfo['vm'] == 2): ?>
+							<tr>
+								<td class="center"><h1>物理机主机名：</h1></td>
+								<td>{$nodeinfo['phyServerHostname']}</td>
+							</tr>
+							<?php endif; ?>
+							<tr>
+								<td class="center"><h1>所属环境：</h1></td>
+								<td>{$environment[$nodeinfo['environment']]}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>所属产品：</h1></td>
+								<td>{$nodeinfo['product']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>服务器型号：</h1></td>
+								<td>{$nodeinfo['serverModel']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>机房名称：</h1></td>
+								<td>{$nodeinfo['room']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>机柜信息：</h1></td>
+								<td>{$nodeinfo['cabinet']}</td>
+							</tr>
+							<tr>
+								<td class="center"><h1>操作系统：</h1></td>
+								<td>{$nodeinfo['os']}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="property">资产信息</div>
+			</div>
+			<div class="tabsFooter">
+				<div class="tabsFooterContent"></div>
+			</div>
+		</div>
+	</div>
+	<div class="nodeRight" style="width:68%; float:right;">
+		<div class="tabs t-con-1" currentIndex="0" eventType="click">
+			<div class="tabsHeader">
+				<div class="tabsHeaderContent">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>CPU仪表盘</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>CPU柱状图</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabsContent info" style="height:300px; width:100%">
+				<div class="basic" id="cpu" style="height:290px; width:100%;">
+				</div>
+				<div class="basic" id="cpu_axis" style="height:290px; width:100%; padding-top:10px;">
+				</div>
+			</div>
+		</div>
+		<div class="tabs t-con-2" currentIndex="0" eventType="click">
+			<div class="tabsHeader">
+				<div class="tabsHeaderContent">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>内存仪表盘</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>内存柱状图</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabsContent info" style="height:300px;">
+				<div class="basic" id="mem" style="height:300px; width:100%"></div>
+				<div class="basic" id="mem_axis" style="height:290px; width:100%; padding-top:10px;"></div>
+			</div>
+		</div>
+		<div class="tabs t-con-2" currentIndex="0" eventType="click">
+			<div class="tabsHeader">
+				<div class="tabsHeaderContent">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>磁盘仪表盘</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>磁盘柱状图</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabsContent info" style="height:300px;">
+				<div class="basic" id="disk" style="height:300px; width:100%"></div>
+				<div class="basic" id="disk_axis" style="height:290px; width:100%; padding-top:10px;"></div>
+			</div>
+		</div>
+	</div>
+	<div style="width:100%; clear:both;">
+	<div class="tabs" currentIndex="0" eventType="click">
+			<div class="tabsHeader">
+				<div class="tabsHeaderContent">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>节点信息</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabsContent warnnumber" style="height:300px;">
+				<table class="table" width="100%">
+						<tbody>
+							<tr>
+								<td width="200"><h1>服务名</h1></td>
+								
+								<td width="120"><h1>持续时间</h1></td>
+								<td width="60"><h1>服务状态</h1></td>
+								<td width="280"><h1>所在路径</h1></td>
+								<td width="70" class="center"><h1>服务进程号</h1></td>
+								<td width="70" class="center"><h1>服务版本</h1></td>
+								<td width="60" class="center"><h1>告警数量</h1></td>
+							</tr>
+							<volist id="vo" name="warn">
+							<tr>
+								<td>{$vo.service}</td>
+								<td>{$vo.time}</td>
+								<td class="center">{$vo.status|checkServiceStatus}</td>
+								<td>{$vo.path}</td>
+								<td class="center">{$vo.pid}</td>
+								<td class="center">{$vo.version}</td>
+								<td class="center">
+									<p class="warn">{$vo.warns}</p>
+								<a  target="dialog"  class="btnMonitor" mask="true" width="800" height="400" title="告警详情" href="__URL__/Service/service/{$vo.service}/ip/<?php echo str_replace(".", "-", $nodeinfo['ip']);?>/">查看详情</a>
+								</td>
+							</tr>
+						</volist>
+						</tbody>
+					</table>
+			</div>
+			<div class="tabsFooter">
+				<div class="tabsFooterContent"></div>
+			</div>
+		</div>
+		</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	 var box_width = $(".nodeRight").width();
+
+	 var box_con_width = parseInt(box_width * 0.32);
+	 var box_margin = parseInt(box_width * 0.03);
+
+	 var real = box_margin > 5 ? 5 : box_margin;
+	 $(".t-con-1").width(box_con_width);
+	 $(".t-con-2").css('margin-left',real).width(box_con_width);
+	 $(".t-con-3").css('margin-left',real).width(box_con_width);
+	 
+	 /*
+	 	以下是图表数据；
+	 */
+	 var cpuUse 	= {$server.cpu} ? {$server.cpu} : 0;
+	 var memUse 	= {$server.mem} ? {$server.mem} : 0;
+	 var diskUse 	= {$server.disk} ? {$server.disk} : 0;
+	 var edata 		= [cpuUse,memUse,diskUse];
+	 
+	 
+	
+	 var cupChart = echarts.init(document.getElementById('cpu'));
+	 var memChart = echarts.init(document.getElementById('mem'));
+	 var diskChart = echarts.init(document.getElementById('disk'));
+	 var charts = [cupChart,memChart,diskChart];
+	 
+	 var names = ['CPU使用率','内存使用率','磁盘使用率']
+	 var option = {
+			    series: [
+			        {
+			            name: '',
+			            type: 'gauge',
+			            detail: {formatter:'{value}%'},
+			            data: [{value: 0, name: ''}],
+			            radius: '80%'
+			        }
+			    ]
+			};
+	 
+	 //创建仪表盘；
+	 var i=0;
+	 for(i; i<edata.length; i++){
+		 option.series[0].data[0].value = edata[i];
+		 option.series[0].data[0].name 	= names[i];
+		 charts[i].setOption(option, true);
+	 }
+	 
+	 //柱状图配置；
+     var cup1info = '{$server.cpu1}' ? '{$server.cpu1}' : 0;
+     var cup2info = '{$server.cpu2}' ? '{$server.cpu2}' : 0;
+     var mem = '{$server.mem}' ? '{$server.mem}' : 0;
+     var disk = '{$server.disk}' ? '{$server.disk}' : 0;
+     
+     var cpu1 = parseInt(cup1info);
+     var cpu2 = parseInt(cup2info);
+     
+     var mems 	= parseInt(mem);
+     var disks 	= parseInt(disk);
+     
+     
+     var path 	= '{$path}' ? '{$path}' : '';
+     var sdata 	= '{$skdata}' ? '{$skdata}' : '';
+     var sdper 	= '{$skper}' ? '{$skper}' : '';
+     
+     
+     
+     var axis_option = {  
+         title : {
+             //text: 'CPU占用比'                   
+         },  
+         tooltip : {
+             trigger: 'axis',
+            // formatter: "{a} <br/>{b} : {c}%" ,
+             formatter: function (params){
+            	 console.log(params);
+                 return params[0].name + '<br/>'
+                       // + params[0].seriesName + ' : ' + params[0].value + '<br/>'
+                        + params[1].seriesName + ' : ' + (params[1].value);
+             }
+         },  
+         legend: {
+             data:[
+                 '总处理能力',  
+                 '已使用'  
+             ]  
+         },  
+         toolbox: {
+             show : true,  
+             feature : {
+                 //mark : {show: true},  
+                 //dataView : {show: true, readOnly: false},  
+                 //magicType : {show: true, type: ['line', 'bar']},  
+                 //restore : {show: true},  
+                 //saveAsImage : {show: true}  
+             }  
+         },  
+         calculable : true,  
+         grid: {x :50 , y: 40 ,x2:20 , y2:30},  
+         xAxis : [  
+             {  
+                 type : 'category',  
+                 data :  ['CPU1','CPU2']  
+             },  
+             {  
+                 type : 'category',  
+                 axisLine: {show:false}, axisTick: {show:false}, axisLabel: {show:false},  
+                 splitArea: {show:false}, splitLine: {show:false},  
+                 data :  ['','']  
+             }  
+         ],  
+         yAxis : [  
+             {  
+                 type : 'value',  
+                 axisLabel:{formatter:'{value} %'}  
+             }  
+         ],  
+         series : [
+               {
+                   name:'',  
+                   type:'bar',  
+                   //barWidth: fixWidth(0.06),      
+                   xAxisIndex:1,  
+                   itemStyle: {
+                   			normal: {
+	                                    borderRadius: 10 ,   
+	                                    color:'rgba(105,205,10,0.8)',   
+	                                    label:{
+	                                    	show:false,
+	                                    	 textStyle: {
+		                                    		// color : 'orange',
+		                                    		 fontSize : 12,
+		                                    		 fontWeight : 'bold'
+		                                      }
+	                                    	}
+               						}  
+                               },
+                    tooltip:{
+                    	show:false,
+                    	zlevel:1
+                    },
+                    data:[100,100]
+               },
+               {
+                   name:'使用百分比(%)',  
+                   legendHoverLink:false,
+                   type:'bar',  
+                   tooltip:{
+                   	show:false,
+                   	zlevel:10
+                   },
+                  // barWidth: fixWidth(0.05),   
+                  detail: {formatter:'{value}%'},
+                  itemStyle: {
+                   			normal: {
+                                     borderRadius: 5 ,   
+                                     color:'rgba(235,35,43,1)',   
+                                     label:{
+                                    	 show:true,
+                                    	 textStyle: {
+                                    		// color : 'orange',
+                                    		 fontSize : 12,
+                                    		 fontWeight : 'bold'
+                                         	}
+                                    	 }
+               						}
+               	},
+                   data:[cpu1,cpu2]  
+               }
+         ]  
+     };  
+     
+     
+     if(IsTrue(cpu1) && IsTrue(cpu2)){
+    	 axis_option.xAxis[1].data = ['CPU1','CPU2'];
+    	 axis_option.series[1].data = [cpu1,cpu2];
+    	 axis_option.series[0].data = [100,100];
+		 var cpu_axis_Chart = echarts.init(document.getElementById('cpu_axis'));
+		 cpu_axis_Chart.setOption(axis_option);
+	 }
+     
+     if(IsTrue(mems)){
+    	 axis_option.xAxis[1].data = ['内存使用率'];
+    	 axis_option.series[1].data = [mems] ;
+    	 axis_option.series[0].data = [100];
+		 var mem_axis_Chart = echarts.init(document.getElementById('mem_axis'));
+		 mem_axis_Chart.setOption(axis_option);
+	 }
+     
+     //["/boot", "/home", "/dev/shm", "/"]
+     if(IsTrue(path) && IsTrue(sdata) && IsTrue(sdper)){
+    	 var pathArr = path.split(',');
+    	 var real = Array();
+    	 var i=0;
+    	 for(i; i<pathArr.length; i++){
+    		if(countStrNumber("/",pathArr[i]) > 1){
+    			real.push(pathArr[i].substring(0,pathArr[i].indexOf("/",1)));
+    		}else{
+    			real.push(pathArr[i]);
+    		}
+    	 }
+    	 
+		 axis_option.xAxis[1].data = real;
+		 axis_option.xAxis[0].data = real;
+		 axis_option.series[1].data = sdata.split(',');
+		 axis_option.series[0].data = sdper.split(',');
+		 var disk_axis_Chart = echarts.init(document.getElementById('disk_axis'));
+		 disk_axis_Chart.setOption(axis_option);
+		
+	 }
+     
+     
+    
+
+	
+	
+	
+	           
+	        
+	 
+})
+
+	 
+	 
+	 
+ 
+</script>
+

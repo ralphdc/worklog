@@ -1,0 +1,60 @@
+1.  修改配置文件：
+	/Sermanage/Application/Service/Conf/config.php
+
+新增：
+
+	//存储登录菜单;
+	'REDIS_HOST'=>'172.17.4.203',
+	'REDIS_PORT'=>'6379',
+	
+2. 给如下目录赋权限制（运行命令前，确保jtopo,jtopolog两个目录已经存在）：
+
+cd Sermanage/Public/Images
+chmod 777 -R jtopo
+chmod 777 -R jtopolg
+
+
+新增文件：
+
+/Sermanage/Application/Service/Controller/GraphController.class.php
+/Sermanage/Application/Service/Controller/GraphlogicController.class.php
+/Sermanage/Application/Service/Controller/GraphSearchController.class.php
+/Sermanage/Application/Service/Controller/ProiconController.class.php
+
+/Sermanage/Application/Service/Model/DeviceTypeModel.class.php
+/Sermanage/Application/Service/Model/GraphlogicModel.class.php
+/Sermanage/Application/Service/Model/GraphModel.class.php
+/Sermanage/Application/Service/Model/GraphSearchModel.class.php
+
+
+/Sermanage/Application/Service/View/DeviceType
+/Sermanage/Application/Service/View/Graph
+/Sermanage/Application/Service/View/Graphlogic
+/Sermanage/Application/Service/View/GraphSearch
+/Sermanage/Application/Service/View/Proicon
+
+
+/Sermanage/Public/dwz/js/jplgmonitor.js
+/Sermanage/Public/dwz/js/jpmonitor.js
+/Sermanage/Public/dwz/js/jtopo-0.4.8-debug.js
+
+/Sermanage/Public/dwz/themes/css/jtopo.css
+
+/Sermanage/Public/Images/jtopo
+/Sermanage/Public/Images/jtopolg
+
+
+
+更改的文件：
+/Sermanage/Application/Service/Controller/CommonController.class.php
+/Sermanage/Application/Service/View/Servermanage/add.html
+/Sermanage/Application/Service/View/Servermanage/edit.html
+/Sermanage/Application/Service/View/Servermanage/index.html
+
+
+/Sermanage/Public/dwz/js/dwz.min.js
+
+
+/Sermanage/Public/dwz/themes/css/core.css
+
+/Sermanage/Public/dwz/themes/img/grid/grid.png

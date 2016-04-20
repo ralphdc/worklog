@@ -1,0 +1,2 @@
+http://172.20.12.123:8080/wcp/login/ajaxsubmit.do?name=wqd&password=111111
+http://172.20.12.123:8080/wcp/actiontree/myMenus.do?domain=SERVICE_MANAGE&cookie---jsid

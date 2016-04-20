@@ -1,0 +1,220 @@
+<pre>Array
+(
+    [errorCode] => 0
+    [errorMessage] => SUCCESS
+    [data] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Array
+                        (
+                            [groupId] => 24
+                            [groupName] => 000
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:29:06.0
+                            [groupDescription] => 000
+                        )
+
+                    [1] => Array
+                        (
+                            [groupId] => 25
+                            [groupName] => 111
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:35:15.0
+                            [groupDescription] => 1111
+                        )
+
+                    [2] => Array
+                        (
+                            [groupId] => 28
+                            [groupName] => 1900
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:41:00.0
+                            [groupDescription] => 1900
+                        )
+
+                    [3] => Array
+                        (
+                            [groupId] => 29
+                            [groupName] => 1901
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:41:18.0
+                            [groupDescription] => 1901
+                        )
+
+                    [4] => Array
+                        (
+                            [groupId] => 26
+                            [groupName] => 222
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:36:46.0
+                            [groupDescription] => 222
+                        )
+
+                    [5] => Array
+                        (
+                            [groupId] => 27
+                            [groupName] => 333
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:40:07.0
+                            [groupDescription] => 333
+                        )
+
+                    [6] => Array
+                        (
+                            [groupId] => 18
+                            [groupName] => 444
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:03:37.0
+                            [groupDescription] => 444
+                        )
+
+                    [7] => Array
+                        (
+                            [groupId] => 19
+                            [groupName] => 555
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:04:30.0
+                            [groupDescription] => 555
+                        )
+
+                    [8] => Array
+                        (
+                            [groupId] => 20
+                            [groupName] => 666
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:06:00.0
+                            [groupDescription] => 666
+                        )
+
+                    [9] => Array
+                        (
+                            [groupId] => 21
+                            [groupName] => 777
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:20:15.0
+                            [groupDescription] => 777
+                        )
+
+                    [10] => Array
+                        (
+                            [groupId] => 30
+                            [groupName] => 778899
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-19 09:36:03.0
+                            [groupDescription] => 778899
+                        )
+
+                    [11] => Array
+                        (
+                            [groupId] => 22
+                            [groupName] => 888
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:21:28.0
+                            [groupDescription] => 888
+                        )
+
+                    [12] => Array
+                        (
+                            [groupId] => 23
+                            [groupName] => 999
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:22:22.0
+                            [groupDescription] => 999
+                        )
+
+                    [13] => Array
+                        (
+                            [groupId] => 5
+                            [groupName] => add
+                            [operaterPerson] => ADMIN
+                            [operaterTime] => 2015-10-20 15:27:15.0
+                            [groupDescription] => 
+                        )
+
+                    [14] => Array
+                        (
+                            [groupId] => 13
+                            [groupName] => pay
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-10-30 12:01:32.0
+                            [groupDescription] => 资金使用
+                        )
+
+                    [15] => Array
+                        (
+                            [groupId] => 16205
+                            [groupName] => poiu
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-19 10:50:59.0
+                            [groupDescription] => poiu
+                        )
+
+                    [16] => Array
+                        (
+                            [groupId] => 16
+                            [groupName] => ralph
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 16:03:07.0
+                            [groupDescription] => 
+                        )
+
+                    [17] => Array
+                        (
+                            [groupId] => 15
+                            [groupName] => rty
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 16:02:30.0
+                            [groupDescription] => 
+                        )
+
+                    [18] => Array
+                        (
+                            [groupId] => 17
+                            [groupName] => uuu
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 17:02:07.0
+                            [groupDescription] => uuu
+                        )
+
+                    [19] => Array
+                        (
+                            [groupId] => 12
+                            [groupName] => w34
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-10-23 11:54:51.0
+                            [groupDescription] => 
+                        )
+
+                    [20] => Array
+                        (
+                            [groupId] => 16204
+                            [groupName] => zxcv
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-19 10:50:26.0
+                            [groupDescription] => zxcv
+                        )
+
+                    [21] => Array
+                        (
+                            [groupId] => 14
+                            [groupName] => 随时
+                            [operaterPerson] => admin
+                            [operaterTime] => 2015-11-18 15:56:12.0
+                            [groupDescription] => 
+                        )
+
+                )
+
+            [0] => Array
+                (
+                    [0] => T6
+                )
+
+        )
+
+    [pageNo] => 0
+    [pageSize] => 0
+    [totalPage] => 0
+    [total] => 0
+)

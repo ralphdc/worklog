@@ -1,0 +1,82 @@
+wget -U "Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3" http://0a0cb3edb195d95aa491f3da09e221be.lswcdn.net/video_hq/693/Tvvwg1Irw6/video_hq.mp4?st=iYqpIL6k8Z4IKIDXBC6z9Q&e=1456919471&ri=2600&rs=256
+
+
+TD}6mnTucvpT:49S
+
+Array ( 
+
+[0] => Array ([pdId] => 15874 [pdName] => scm [pdDemo] => [pdIcon] => 21.png ) 
+[1] => Array (  [pdId] => 16087 [pdName] => mq_msg [pdDemo] => ss [pdIcon] => 56d6b85421f1d.png ) 
+[2] => Array ( [pdId] => 16692 [pdName] => mpay [pdDemo] => [pdIcon] => 56d6bb93834e1.png )
+[3] => Array ( [pdId] => 16707 [pdName] => Monitor_servcontrol [pdDemo] => tyu [pdIcon] => 56d6b85421f1d.png ) 
+[4] => Array ( [pdId] => 16736 [pdName] => WEB [pdDemo] => [pdIcon] => )
+[5] => Array ( [pdId] => 17440 [pdName] => mapy [pdDemo] => [pdIcon] => ) 
+[6] => Array ( [pdId] => 17621 [pdName] => tms_dll [pdDemo] => [pdIcon] => ) 
+[7] => Array ( [pdId] => 17637 [pdName] => omp [pdDemo] => [pdIcon] => )
+
+ ) 
+
+ 
+ 
+ public function proSearch:
+ Array
+(
+    [0] => Array
+        (
+            [pdId] => 15874
+            [pdName] => scm
+            [pdDemo] => 
+            [pdIcon] => 21.png
+        )
+
+)
+
+=============================================================
+$allService = $dataModel->queryServiceList();
+print_r($allService);exit;
+
+Array ( 
+[errorCode] => 0 
+[errorMessage] => SUCCESS 
+[data] =>
+ Array ( 
+	[0] => pmsignlist 
+	[1] => omp_icealarm
+	[2] => omp_groupweight1233 
+	[3] => MsgQueueReceiverStartUp 
+	[4] => mpay_shjk 
+	[5] => simulate_spos 
+	[6] => web-service 
+	[7] => fund_mpay_client_provider 
+	[8] => omp-zookeeper ) 
+	[pageNo] => 0
+	[pageSize] => 0 
+	[totalPage] => 0 
+	[total] => 0 
+) 
+
+====================================================================
+查询某个产品下的服务名称：
+
+Array
+(
+    [errorCode] => 0
+    [errorMessage] => SUCCESS
+    [data] => Array
+        (
+            [0] => pmsignlist
+            [1] => omp_icealarm
+            [2] => omp_groupweight1233
+            [3] => MsgQueueReceiverStartUp
+            [4] => mpay_shjk
+            [5] => simulate_spos
+            [6] => web-service
+            [7] => fund_mpay_client_provider
+            [8] => omp-zookeeper
+        )
+
+    [pageNo] => 0
+    [pageSize] => 0
+    [totalPage] => 0
+    [total] => 0
+)

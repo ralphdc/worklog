@@ -1,0 +1,25 @@
+SignalHandler.cpp: In function ‘void signalHandler(int)’:
+SignalHandler.cpp:43: error: ‘remove’ was not declared in this scope
+make[2]: *** [SignalHandler.o] Error 1
+make[2]: Leaving directory `/usr/local/src/develop/Ice-3.3.0/cpp/src/Slice'
+make[1]: *** [all] Error 1
+make[1]: Leaving directory `/usr/local/src/develop/Ice-3.3.0/cpp/src'
+make: *** [all] Error 1
+解决办法：
+vi Ice-3.3.0/cpp/src/Slice/SignalHandler.cpp 开头加上 #include <stdio.h>
+=========================================================================
+
+
+
+
+expand.c:(.text+0x1e0c): undefined reference to `stpcpy'
+/usr/local/ICE-3.3.0/mcpp-2.7.2/lib/libmcpp.a(expand.o):expand.c:(.text+0x3695): more undefined references to `stpcpy' follow
+collect2: ld returned 1 exit status
+make[2]: *** [../../lib/libSlice.so.3.3.0] Error 1
+make[2]: Leaving directory `/usr/local/src/develop/Ice-3.3.0/cpp/src/Slice'
+make[1]: *** [all] Error 1
+make[1]: Leaving directory `/usr/local/src/develop/Ice-3.3.0/cpp/src'
+make: *** [all] Error 1
+解决办法：
+vi Ice-3.3.0/cpp/src/Slice/SignalHandler.cpp 开头加上 #include <string.h>
+=========================================================================

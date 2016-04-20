@@ -1,0 +1,94 @@
+SELECT * FROM (SELECT thinkphp.*, rownum AS numrow FROM (SELECT   * FROM hsmconfig) thinkphp ) Array
+
+(
+    [0] => Array
+        (
+            [HSM_ID] => BF3D0CFE90A7156E0502804551037681
+            [HSM_MODEL] => Softenc
+            [HSM_IP] => 192.168.21.1
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 21.1
+            [HSM_ISDEFAULT] => 1
+            [ADDPERSON] => 
+            [ADDDATE] => 2012-09-07
+            [HSM_BAK] => BF3D0CFE90A7156E0502804551037682
+            [NUMROW] => 1
+        )
+
+    [1] => Array
+        (
+            [HSM_ID] => e96553d9e1e1454680d4e579556b2b03
+            [HSM_MODEL] => 1
+            [HSM_IP] => 172.17.3.69
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 
+            [HSM_ISDEFAULT] => 0
+            [ADDPERSON] => 310
+            [ADDDATE] => 2014-10-22 20:39:25
+            [HSM_BAK] => 
+            [NUMROW] => 2
+        )
+
+    [2] => Array
+        (
+            [HSM_ID] => FF73BC1383EB56248DD01FE1D01E8A87
+            [HSM_MODEL] => 1
+            [HSM_IP] => 172.20.5.58
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 
+            [HSM_ISDEFAULT] => 0
+            [ADDPERSON] => 310
+            [ADDDATE] => 2014-10-22 20:39:25
+            [HSM_BAK] => 9973BC1383EB56248DD01FE1D01E8A87
+            [NUMROW] => 3
+        )
+
+    [3] => Array
+        (
+            [HSM_ID] => 82050a0d92574b76bb57af209b604a92
+            [HSM_MODEL] => 0
+            [HSM_IP] => 172.30.3.21
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 
+            [HSM_ISDEFAULT] => 0
+            [ADDPERSON] => 310
+            [ADDDATE] => 2015-07-17 17:04:46
+            [HSM_BAK] => 
+            [NUMROW] => 4
+        )
+
+    [4] => Array
+        (
+            [HSM_ID] => BF3D0CFE90A7156E0502804551037682
+            [HSM_MODEL] => Softenc
+            [HSM_IP] => 172.30.2.130
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 21.1
+            [HSM_ISDEFAULT] => 1
+            [ADDPERSON] => 
+            [ADDDATE] => 2012-09-07
+            [HSM_BAK] => BF3D0CFE90A7156E0502804551037682
+            [NUMROW] => 5
+        )
+
+    [5] => Array
+        (
+            [HSM_ID] => 9973BC1383EB56248DD01FE1D01E8A87
+            [HSM_MODEL] => 1
+            [HSM_IP] => 172.20.12.253
+            [HSM_PORT] => 6667
+            [HSM_TIMEOUT] => 60
+            [HSM_POSITION] => 
+            [HSM_ISDEFAULT] => 0
+            [ADDPERSON] => 310
+            [ADDDATE] => 2014-10-22 20:39:25
+            [HSM_BAK] => 
+            [NUMROW] => 6
+        )
+
+)

@@ -1,0 +1,66 @@
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\请求时间是：2016-01-07 11:28:01
+请求内容是：Array
+(
+    [merchno] => 849440356910130
+    [termno] => 84902174
+)
+
+请求参数是：{"merchno":"849440356910130","termno":"84902174"}
+请求URL是：http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+接口返回的消息是：{"rtn":"FALSE","rtnMsg":"SYS ERROR"}
+进行的操作是：update
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\请求时间是：2016-01-07 11:30:09
+请求内容是：Array
+(
+    [merchno] => 302440359988011
+    [termno] => 30290014
+)
+
+请求参数是：{"merchno":"302440359988011","termno":"30290014"}
+请求URL是：http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+接口返回的消息是：{"respCode":"success","respMsg":null,"success":true}
+进行的操作是：remove
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\请求时间是：2016-01-07 11:30:15
+请求内容是：Array
+(
+    [merchno] => 849440372780028
+    [termno] => 84902172
+)
+
+请求参数是：{"merchno":"849440372780028","termno":"84902172"}
+请求URL是：http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+接口返回的消息是：{"respCode":"success","respMsg":null,"success":true}
+进行的操作是：update
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\请求时间是：2016-01-07 11:30:34
+请求内容是：Array
+(
+    [merchno] => 303440156918865
+    [termno] => 84902856
+)
+
+请求参数是：{"merchno":"303440156918865","termno":"84902856"}
+请求URL是：http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+接口返回的消息是：{"respCode":"success","respMsg":null,"success":true}
+进行的操作是：create
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\请求时间是：2016-01-07 11:32:51
+请求内容是：Array
+(
+    [merchno] => 849440356910130
+    [termno] => 84902174
+)
+
+请求参数是：{"merchno":"849440356910130","termno":"84902174"}
+请求URL是：http://172.20.4.1:9000/distui/WSTradeTypeSync/syncTermno
+接口返回的消息是：{"respCode":"success","respMsg":null,"success":true}
+进行的操作是：remove

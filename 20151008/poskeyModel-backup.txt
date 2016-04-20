@@ -1,0 +1,231 @@
+<?php
+use Think\Model;
+
+// 节点模型
+class PoskeyModel extends CommonModel{// 
+   protected $_validate	=	array(
+       array('MERNO','require','商户名必须！'),
+       );
+   						
+	protected $fields = array( 'SID', 'MERNO','POSNO','TMKINDEX','TMKLEN','ISUSE', 'TMK1','ZMKINDEX1','ZMKINDEX2','HSM_ID','TMK2','ZMKLEN1','ZMKLEN2','ADDPERSON','ADDDATE');
+    protected $pk = 'SID';
+	protected $_auto	 =	 array(
+		array('SID','createGuid',self::MODEL_INSERT,'callback','1'),
+	);
+	
+	public function saveGet() {
+		$rowset = preg_split ( "/,/", $_GET['ids'] );
+		$rows = array ();
+		foreach ( $rowset as $row ) {
+			$data = preg_split ( "/;/", $row );
+				
+			if ($data [4] != '') {
+			    
+			    $data[0] = 'lrtest1';
+			    
+			    
+			    
+// 				$reqr = "0x14";
+// 				$len = dechex ( strlen ( $data[0] ) );
+// 				$reqr .= strval ( $len ) . $data[0];
+				
+			   // $reqr = 0x14;
+			   $reqr="14";
+			    $len = dechex ( strlen ( $data[0] ) );
+			    $reqr .= strval ( $len ) . $data[0];
+			    
+			    
+			    
+			    
+			    $command = 0x14;
+				$reqData = $this->init_tcp_data($command,$data[0]);
+				$reqLen = strlen($reqData);
+				
+				$packet = pack("a{$reqLen}", $reqData);
+				
+				$socket_tools = new Key\Tools\Socket();
+				
+				
+				//$socket_result = $socket_tools::sendSocketMsg('172.20.0.227','9528',$reqData,1);
+				
+				$socket = $socket_tools::singleton ();
+				$socket->connect ( '172.20.0.227', '9528' ); //连服务器
+				$sockResult = $socket->sendRequest ( $packet); // 将包发送给服务器
+				if($sockResult){
+				    $responseRsult = $socket->getResponse();
+				}
+				print_r($responseRsult);
+				exit;
+				
+				
+				$tuxclt = new TuxcltModel();
+				$tux_ret = $tuxclt->tuxPostRequest ( "/WEBENC", $reqr );
+				
+				list ( , $str ) = explode ( ':', $tux_ret );
+				$dat = array ();
+				$idx = 0;
+				$type = substr ( $str, $idx, 2 );
+				$idx += 2;
+				$resp = substr ( $str, $idx, 2 );
+				$idx += 2;
+				if ($type == '14')
+				{
+					if ($resp == '01') {
+						$len = hexdec ( substr ( $str, $idx, 2 ) );
+						$idx += 2;
+						$dat ['sid'] = substr ( $str, $idx, $len );
+						$idx += $len;
+						$len = hexdec ( substr ( $str, $idx, 2 ) );
+						$idx += 2;
+						$dat ['tmk1'] = substr ( $str, $idx, $len );
+						$idx += $len;
+						$dat ['tmk2'] = substr ( $str, $idx, $len );
+						$idx += $len;
+							
+					} else
+					{
+						$ret = array ("statusCode" => "0", "message" => '更新主密钥失败',
+								"navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "" );
+						echo json_encode ( $ret );
+						exit;
+	
+					}
+				}else {
+					$ret = array ("statusCode" => "0", "message" => '调用加密机服务失败',
+							"navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "" );
+					echo json_encode ( $ret );
+					exit;
+						
+						
+				}
+					
+			}
+			else {
+				$ret = array ("statusCode" => "0", "message" => '传输密钥索引为空，请添加后再获取主密钥密文', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+					
+			}
+			if($len == 16) $temp = 0;
+			if($len == 32) $temp = 1;
+			if($len == 48) $temp = 2;
+			//$row = $this->db->findByField(array('sid'=>$data[0]));
+			
+			$row = $this->where(array('SID'=>$data[0]))->find();
+			$row['SID'] = $data[0];
+			$row['TMK1'] = $dat['tmk1'];
+			$row['TMK2'] = $dat['tmk2'];
+			$row['TMKLEN'] = $temp;
+			$result = $this->save($row);
+			
+	
+		}
+		return $result;
+	}
+	
+	public function init_tcp_data($command,$sid)
+	{
+	    
+	    $byte = new Key\Tools\Bytes();
+	    
+	    
+	    $message = $this->constructMsg($command,$sid);
+	    
+	    
+	    //求得消息体长度；
+	    $msgLength = $message['msglength'];
+	    
+	    //构造消息体；
+	    $msgArr = $message['msg'];
+	       
+	    
+	    //构造transparams;
+	    $logservice = array('logServiceId'=>'000000-lhh');
+	    $logjson = json_encode($logservice);
+	    //主内容转byte[]；
+	    $bytes_trans_content = $byte::getbytes($logjson);
+	   //求总长度；
+	    $tranlength = intval(strlen($logjson)) + 2;
+	    //长度转低高位；
+	    $byte_trans_length = $this->getHeightLow($tranlength);
+	    
+	    
+	    //合并数组，构造transParams
+	    $transParam = array_merge($byte_trans_length,$bytes_trans_content);
+	    
+	    $msgStr = $byte::toStr ($transParam);
+	    
+	    //求得总长度；
+	    $dataPackLength = $msgLength + $tranlength +7;
+	   
+	    //求得总长度高低位转换；
+	    $LC = $this->getHeightLow($dataPackLength);
+  
+	    $INS = array(0xf1);
+	    
+	    $SEQ = array(0x00);
+	    
+	    $CR = array(0x00,0x00);
+	    
+	    $checkArr = array_merge($LC,$INS,$SEQ,$CR,$transParam,$msgArr);
+	    
+	    
+	    $crcs = 0;
+	    for( $i=0; $i<count($checkArr); $i++) {
+	        $crcs ^= $checkArr[$i];
+	    }
+	    
+	    $checkArr[] = $crcs;
+	    $msgStr = $byte::toStr ($checkArr);
+	    
+	    
+// 	    echo '----------------';
+// 	    echo bin2hex($msgStr);
+// 	    echo '+++++++++++++++++++';
+// 	    exit;
+	    
+	    
+	    return $msgStr;
+	}
+	
+	private function constructMsg($command,$sid)
+	{
+	    //$arg = func_get_args();
+	    $byte = new Key\Tools\Bytes();
+	    
+	    $len = dechex ( strlen ( $sid ) );
+	    $reqr .= strval ( $len ) . $sid;
+	    
+	    $response['msglength'] = 2 + strlen(strval($sid));
+	    
+	    $command_byte = $command; //这里要传入0x开头16进制数据；
+	    $msg_byte_length = $len;  //SID长度已经是16进制，不可以再用$byte::integertobytes进行转换；
+	    $msg_byte_sid = $byte::getbytes($sid);
+	    
+	    
+	    $response['msg'] = $msg_byte_sid;
+	    
+	    
+	    array_unshift($response['msg'],$msg_byte_length);
+	    array_unshift($response['msg'],$command_byte);
+	    return $response;
+	}
+	//求低高位；
+	
+	private function getHeightLow($src)
+	{
+	    $result = array();
+	    $result[0] =  ($src % 256) & 0xff;
+	    $result[1] =  ($src / 256) & 0xff;
+	    return $result;
+	}
+	
+	private function getHL($ints)
+	{
+	    $result = array();
+	    $result[] =  $ints >> 16;
+	    $result[] =  $ints & 0xFFFF;
+	    return $result;
+	}
+    
+}

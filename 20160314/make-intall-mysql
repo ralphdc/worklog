@@ -1,0 +1,6 @@
+c++: Internal error: Killed (program cc1plus)
+Please submit a full bug report.
+See <http://bugzilla.redhat.com/bugzilla> for instructions.
+make[2]: *** [sql/CMakeFiles/sql.dir/item_geofunc.cc.o] Error 1
+make[1]: *** [sql/CMakeFiles/sql.dir/all] Error 2
+make: *** [all] Error 2

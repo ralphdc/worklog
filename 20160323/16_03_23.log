@@ -1,0 +1,411 @@
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Public/validateLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service url is http://172.17.3.97:8080/kms/actiontree/myMenus.do
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service params is Array
+(
+    [domain] => SERVICE_MANAGE
+)
+
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service method is POST
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service request is POST /kms/actiontree/myMenus.do?domain=SERVICE_MANAGE HTTP/1.1
+Host: 172.17.3.97
+Cookie:JSESSIONID=1138DEA86A4FC79B9AFE0A3C2035E289
+Connection:close
+
+
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service response is HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=F809E381D11C00BF4F1B8B816E701650; Path=/kms/; HttpOnly
+Location: http://172.17.3.97:80/kms/login/webPage.html
+Content-Length: 0
+Date: Wed, 23 Mar 2016 06:49:55 GMT
+Connection: close
+
+
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: \\\\\\\\\\\\\\\\获取菜单解析后的结果是：
+[ 2016-03-23T14:48:52+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with that of CommonController::index() /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 3 行.
+NOTIC: [8] Undefined index: ServiceLoginMenu /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: volist /var/www/html/Sermanage/Runtime/Cache/Service/573a565d88655dd6d35e2fd9412a37b4.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-03-23T14:51:05+08:00 ] 172.20.0.206 /index.php/Service/Public/logout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-03-23T14:51:06+08:00 ] 172.20.0.206 /index.php/Service/Public/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Public/validateLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service url is http://172.17.3.97:8080/kms/actiontree/myMenus.do
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service params is Array
+(
+    [domain] => SERVICE_MANAGE
+)
+
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service method is POST
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service request is POST /kms/actiontree/myMenus.do?domain=SERVICE_MANAGE HTTP/1.1
+Host: 172.17.3.97
+Cookie:JSESSIONID=1138DEA86A4FC79B9AFE0A3C2035E289
+Connection:close
+
+
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service response is HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=4529E157B34317E4F36400433AE85FA1; Path=/kms/; HttpOnly
+Location: http://172.17.3.97:80/kms/login/webPage.html
+Content-Length: 0
+Date: Wed, 23 Mar 2016 06:52:11 GMT
+Connection: close
+
+
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: \\\\\\\\\\\\\\\\获取菜单解析后的结果是：
+[ 2016-03-23T14:51:08+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with that of CommonController::index() /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 3 行.
+NOTIC: [8] Undefined index: ServiceLoginMenu /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: volist /var/www/html/Sermanage/Runtime/Cache/Service/573a565d88655dd6d35e2fd9412a37b4.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service url is http://172.17.3.97:8080/kms/actiontree/myMenus.do
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service params is Array
+(
+    [domain] => SERVICE_MANAGE
+)
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service method is POST
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service request is POST /kms/actiontree/myMenus.do?domain=SERVICE_MANAGE HTTP/1.1
+Host: 172.17.3.97
+Cookie:JSESSIONID=1138DEA86A4FC79B9AFE0A3C2035E289
+Connection:close
+
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service response is HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=36B9642A8F5A8B4EB4568DE172D22ED6; Path=/kms/; HttpOnly
+Location: http://172.17.3.97:80/kms/login/webPage.html
+Content-Length: 0
+Date: Wed, 23 Mar 2016 06:52:13 GMT
+Connection: close
+
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: \\\\\\\\\\\\\\\\获取菜单解析后的结果是：
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with that of CommonController::index() /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: volist /var/www/html/Sermanage/Runtime/Cache/Service/573a565d88655dd6d35e2fd9412a37b4.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service url is http://172.17.3.97:8080/kms/actiontree/myMenus.do
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service params is Array
+(
+    [domain] => SERVICE_MANAGE
+)
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service method is POST
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service request is POST /kms/actiontree/myMenus.do?domain=SERVICE_MANAGE HTTP/1.1
+Host: 172.17.3.97
+Cookie:JSESSIONID=1138DEA86A4FC79B9AFE0A3C2035E289
+Connection:close
+
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service response is HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=6BC4583702D83FD58EDDD31DFDB286BD; Path=/kms/; HttpOnly
+Location: http://172.17.3.97:80/kms/login/webPage.html
+Content-Length: 0
+Date: Wed, 23 Mar 2016 06:52:13 GMT
+Connection: close
+
+
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: \\\\\\\\\\\\\\\\获取菜单解析后的结果是：
+[ 2016-03-23T14:51:10+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with that of CommonController::index() /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: volist /var/www/html/Sermanage/Runtime/Cache/Service/573a565d88655dd6d35e2fd9412a37b4.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2016-03-23T14:51:12+08:00 ] 172.20.0.206 /index.php/Service/Public/logout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-03-23T14:51:14+08:00 ] 172.20.0.206 /index.php/Service/Public/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Public/validateLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service url is http://172.17.3.97:8080/kms/actiontree/myMenus.do
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service params is Array
+(
+    [domain] => SERVICE_MANAGE
+)
+
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service method is POST
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service request is POST /kms/actiontree/myMenus.do?domain=SERVICE_MANAGE HTTP/1.1
+Host: 172.17.3.97
+Cookie:JSESSIONID=1138DEA86A4FC79B9AFE0A3C2035E289
+Connection:close
+
+
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: ////////////////////////////// login_do_service response is HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=444D4EC0F038FD185BE3DC70F75595D9; Path=/kms/; HttpOnly
+Location: http://172.17.3.97:80/kms/login/webPage.html
+Content-Length: 0
+Date: Wed, 23 Mar 2016 06:52:23 GMT
+Connection: close
+
+
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+ERR: \\\\\\\\\\\\\\\\获取菜单解析后的结果是：
+[ 2016-03-23T14:51:20+08:00 ] 172.20.0.206 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with that of CommonController::index() /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 3 行.
+NOTIC: [8] Undefined index: ServiceLoginMenu /var/www/html/Sermanage/Application/Service/Controller/IndexController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: volist /var/www/html/Sermanage/Runtime/Cache/Service/573a565d88655dd6d35e2fd9412a37b4.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2016-03-23T14:51:24+08:00 ] 172.20.0.206 /index.php/Service/Public/logout/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-03-23T14:51:26+08:00 ] 172.20.0.206 /index.php/Service/Public/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+

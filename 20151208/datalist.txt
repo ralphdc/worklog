@@ -1,0 +1,154 @@
+{"oprId":"9784","type":2},
+{"oprId":"10113","type":2},
+{"oprId":"15538","type":1},
+{"oprId":"32174","type":6},
+{"oprId":"34701","type":4},
+{"oprId":"34919","type":3},
+{"oprId":"41853","type":5},
+{"oprId":"55807","type":7}
+
+
+Array
+(
+    [0] => Array
+        (
+            [oprId] => 209
+            [type] => 5
+        )
+
+    [1] => Array
+        (
+            [oprId] => 2002
+            [type] => 6
+        )
+
+    [2] => Array
+        (
+            [oprId] => 2014
+            [type] => 7
+        )
+
+    [3] => Array
+        (
+            [oprId] => 6472
+            [type] => 1
+        )
+
+    [4] => Array
+        (
+            [oprId] => 14449
+            [type] => 2
+        )
+
+)
+
+Array ( 
+[0] => Array ( 
+[oprId] => 209 
+[type] => 5 
+) 
+[1] =>
+ Array (
+ [oprId] => 2002
+ [type] => 6 
+ ) 
+ 
+ [2] => Array ( 
+ [oprId] => 2014 
+ [type] => 7 
+ ) 
+ 
+ [3] => Array ( [oprId] => 6472 [type] => 1 ) [4] => Array ( [oprId] => 14449 [type] => 2 ) ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Array
+(
+    [0] => Array
+        (
+            [staffId] => 209
+            [staffName] => 张卫锋
+            [staffAccount] => 00000000
+            [staffPhoneNo] => 13006697897
+            [staffEmail] => zhangweifeng@xinguodu.com
+            [microBlogId] => 12313
+            [wechatId] => 123123
+            [rights] => 
+        )
+
+    [1] => Array
+        (
+            [staffId] => 2002
+            [staffName] => 蒋运昆
+            [staffAccount] => 00000520
+            [staffPhoneNo] => 13424303741
+            [staffEmail] => jiangyunkun@xinguodu.com
+            [microBlogId] => 1251
+            [wechatId] => 547008843
+            [rights] => 
+        )
+
+    [2] => Array
+        (
+            [staffId] => 2014
+            [staffName] => 黄峰
+            [staffAccount] => 00012302000
+            [staffPhoneNo] => 585585
+            [staffEmail] => huangfeng@xinguodu.com
+            [microBlogId] => 126
+            [wechatId] => 2251428
+            [rights] => 
+        )
+
+    [3] => Array
+        (
+            [staffId] => 6472
+            [staffName] => 孙火
+            [staffAccount] => 123456
+            [staffPhoneNo] => 13006697897
+            [staffEmail] => sunhuo@xinguodu.com
+            [microBlogId] => 
+            [wechatId] => 
+            [rights] => 
+        )
+
+		
+		
+		Array
+(
+    [0] => Array
+        (
+            [oprId] => 209
+            [type] => 5
+        )
+
+    [1] => Array
+        (
+            [oprId] => 2002
+            [type] => 6
+        )
+
+    [2] => Array
+        (
+            [oprId] => 2014
+            [type] => 7
+        )
+
+    [3] => Array
+        (
+            [oprId] => 6472
+            [type] => 1
+        )
+
+    [4] => Array
+        (
+            [oprId] => 14449
+            [type] => 2
+        )
+
+)
+

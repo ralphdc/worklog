@@ -1,0 +1,30 @@
+public static byte[] packEncryptor(byte[] msgData, String requestId) {
+//	 byte[] packData = new byte[msgData.length + 7];
+//	 byte[] lcData = ByteUtil.intToLHbyte(packData.length);
+//	 byte[] topData = new byte[] { (byte) 0xF1, 0, 0, 0 };
+//
+//	 packData = addCrcData(StringUtil.concatAll(lcData, topData, msgData, new byte[1]));
+//	 return packData;
+
+long time = System.currentTimeMillis();
+requestId = (requestId == null ? ""+time : requestId);
+Map<String, String> trsParam = new HashMap<String, String>();
+trsParam.put("logServiceId", requestId);
+String trsParamConJson = JSON.toJSONString(trsParam);
+// String trsParamConJson = "{\"logServiceId\":"+"\"" + requestId + "\"}";
+byte[] trsParamCon = null;
+try {
+trsParamCon = trsParamConJson.getBytes("UTF-8");
+} catch (UnsupportedEncodingException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+
+byte[] trsParLength = ByteUtil.intToLHbyte(trsParamConJson.length() + 2);
+byte[] packData = new byte[msgData.length + 7+ trsParamConJson.length() + 2];
+byte[] lcData = ByteUtil.intToLHbyte(packData.length);
+byte[] topData = new byte[] { (byte) 0xF1, 0, 0, 0 };
+packData = addCrcData(StringUtil.concatAll(lcData, topData,trsParLength, trsParamCon, msgData, new byte[1]));
+//System.out.println(packData.length);
+return packData;
+}

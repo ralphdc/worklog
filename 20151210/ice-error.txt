@@ -1,0 +1,7 @@
+making all in java 
+make[1]: Entering directory `/root/soft/Ice-3.5.1/java' 
+ant -emacs 
+Error: Could not find or load main class org.apache.tools.ant.launch.Launcher 
+make[1]: *** [all] Error 1 
+make[1]: Leaving directory `/root/soft/Ice-3.5.1/java' 
+make: *** [all] Error 1

@@ -1,0 +1,7 @@
+
+
+Array ( 
+[config_nodes] => 
+{"name":"配置项","t":"配置项","open":true,"children": []} 
+
+) 

@@ -1,0 +1,58 @@
+{
+
+"key":"repertory.serviceinstance.search",
+"page":{
+		"pageNo":1,
+		"pageSize":20
+		},
+"data":{
+		"desployEnv":"5",
+		"submitor":"admin"
+		}
+}
+
+====================================================================================================================
+
+Array
+(
+    [errorCode] => 0
+    [errorMessage] => SUCCESS
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [serviceInstanceId] => 15957
+                    [serviceName] => tms_dll
+                    [serviceVersion] => 1.0.0
+                    [ipv] => 172.17.6.180
+                    [path] => /fsdf/tms_dll
+                    [desployEnv] => 5
+                )
+
+            [1] => Array
+                (
+                    [serviceInstanceId] => 15940
+                    [serviceName] => pmsignlist
+                    [serviceVersion] => 1.0.0
+                    [ipv] => 172.17.6.180
+                    [path] => /ghtgr/pmsignlist
+                    [desployEnv] => 5
+                )
+
+            [2] => Array
+                (
+                    [serviceInstanceId] => 15964
+                    [serviceName] => omp_groupweight1233
+                    [serviceVersion] => 1.0.0
+                    [ipv] => 172.17.6.180
+                    [path] => /li/omp_groupweight1233
+                    [desployEnv] => 5
+                )
+
+        )
+
+    [pageNo] => 1
+    [pageSize] => 20
+    [totalPage] => 1
+    [total] => 3
+)

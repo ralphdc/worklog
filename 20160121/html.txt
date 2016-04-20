@@ -1,0 +1,408 @@
+<form id="pagerForm" action="/Key/Poskey" method="post">
+	<input type="hidden" name="pageNum" value="1"/>
+	<input type="hidden" name="numPerPage" value="16"/>
+    <input type="hidden" name="_order" value=""/>
+	<input type="hidden" name="_sort" value="1"/>
+    <input type="hidden" name="listRows" value=""/>
+    </form>
+
+
+<div class="page">
+	<div class="pageHeader">
+		<form onsubmit="return navTabSearch(this);" action="/Key/Poskey" method="post">
+		<div class="searchBar">
+			<ul class="searchContent">
+				<li>
+					<label>商户号：</label>
+					<input type="text" name="MERNO" value="" class="medium" >
+				</li>
+				<li>
+					<label>终端号：</label>
+					<input type="text" name="POSNO" value="" class="medium" >
+				</li>
+			</ul>
+			<div class="subBar">
+				<ul>
+					<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div
+></div></li>
+				</ul>
+			</div>
+		</div>
+		</form>
+	</div>
+
+	<div class="pageContent">
+		<div class="panelBar">
+			<ul class="toolBar">
+			
+				<li><a class="add" href="/Key/Poskey/add" target="dialog" mask="true" rel="addbankkey" width="900"
+ height="400"><span>新增</span></a></li>
+				<li><a class="delete" href="/Key/Poskey/foreverdelete/SID/{sid}/navTabId/L105" target="ajaxTodo"
+  title="你确定要删除吗？" warn="请选择一条信息"><span>删除</span></a></li>
+				<li><a class="edit" href="/Key/Poskey/edit/SID/{sid}/navTabId/L105" target="dialog" mask="true" warn
+="请选择一条信息" rel="editPoskey" width="900" height="400"><span>修改</span></a></li>
+				<li><a id="getmain" class="edit" href="/Key/Poskey/gettmk/ids/{sid}" warn="请选择一条信息" target="ajaxTodo"
+  ><span>主密钥密文获取</span></a></li>
+				<li><a id="sportselect" class="edit" href="/Key/Poskey/sportSelect"  target="dialog" title="选择建立
+连接的端口号" ><span>串口选择</span></a></li>
+				<li><a class="edit" href="/Key/Poskey/downToPos/SID/{sid}/navTabId/L105" target="dialog" width="500"
+ height="250" ><span>下载密钥到母pos</span></a></li>
+				<li><a class="edit" onclick="DownToTerm();"  title="下载到终端" warn="请选择一条信息"><span>下载到终端</span></a>
+</li>
+				
+			</ul>
+		</div>
+		<table class="list" width="100%" layoutH="116">
+			<thead>
+			<tr>
+				<th width="100">商户号</th>
+				<th width="100">POS终端号</th>
+				<th width="80">主密钥索引</th>
+				<th width="100">主密钥长度</th>
+				<th width="100">传输密钥索引</th>
+				<th width="100">主密钥密文（传输密钥加密）</th>
+				<th width="100">区域主密钥索引</th>
+				<th width="100">主密钥密文（ZMK加密）</th>
+				<th width="100">加密机IP</th>
+				<th width="100">增加人</th>
+				<th width="100">增加日期</th>
+			</tr>
+			</thead>
+			<tbody id="showPoskey">
+			<tr target="sid" rel="lrs10000099"  rel2="lrs10000099;302440351378029;10000099;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000099</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000098"  rel2="lrs10000098;302440351378029;10000098;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000098</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000097"  rel2="lrs10000097;302440351378029;10000097;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000097</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000096"  rel2="lrs10000096;302440351378029;10000096;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000096</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000095"  rel2="lrs10000095;302440351378029;10000095;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000095</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000094"  rel2="lrs10000094;302440351378029;10000094;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000094</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000093"  rel2="lrs10000093;302440351378029;10000093;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000093</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000092"  rel2="lrs10000092;302440351378029;10000092;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000092</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000091"  rel2="lrs10000091;302440351378029;10000091;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000091</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000090"  rel2="lrs10000090;302440351378029;10000090;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000090</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000089"  rel2="lrs10000089;302440351378029;10000089;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000089</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000088"  rel2="lrs10000088;302440351378029;10000088;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000088</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000087"  rel2="lrs10000087;302440351378029;10000087;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000087</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000086"  rel2="lrs10000086;302440351378029;10000086;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000086</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000085"  rel2="lrs10000085;302440351378029;10000085;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000085</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr><tr target="sid" rel="lrs10000084"  rel2="lrs10000084;302440351378029;10000084;0;11;11;C4FC13B527D2B498C4FC13B527D2B498
+;C4FC13B527D2B498C4FC13B527D2B498">
+					<td>302440351378029</td><!------商户号------1-->
+					<td>10000084</td><!------POS终端号----1---->
+					<td>0</td><!------主密钥索引---1----->
+					<td>128Bit</td><!------主密钥长度--1------>
+					<td>11</td><!------传输密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!------主密钥密文（传输密钥加密）----1---->
+					<td>11</td><!------区域主密钥索引---1----->
+					<td>C4FC13B527D2B498C4FC13B527D2B498</td><!-----主密钥密文（ZMK加密）??--------->
+					<td>172.17.3.69</td><!--加密机IP---->
+					<td>343</td>
+					<td>2014-03-27 16:25:58</td>
+					
+				</tr>			
+			</tbody>
+		</table>
+		<div class="panelBar">
+			<div class="pages">
+				<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="5" >5</option>
+				<option value="10" >10</option>
+				<option value="16" selected=selected>16</option>
+				<option value="20" >20</option>
+			</select>
+				<span>共51524条</span>
+
+			</div>
+			<div class="pagination" targetType="navTab" totalCount="51524" numPerPage="16" pageNumShown="10" currentPage
+="1"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+$("#getmain").click(function(){
+	var ids = getIds();
+	if(ids == undefined){
+		alertMsg.error("请先选择一条数据");
+		    return;
+	}
+	var url = $(this).attr('href');
+	url = url.replace("{sid}",ids);
+	$(this).attr('href',url);
+	return;
+});
+function getIds(){
+	var ids="";
+	ids = $("#showPoskey .selected").attr("rel2");
+	return ids;
+}
+//下载密钥到终端
+function DownToTerm()
+{
+     var ids= getIds();
+	 if(ids =="" || ids == undefined)
+	 {
+			alertMsg.error("请先选择需要下载的密钥");
+		    return;
+	  }
+	  else
+	  {
+		  var len = ids.split(",").length;
+		  var data = new Array();
+		  data = ids.split(",");
+		  for(var i=0;i<len;i++)
+		  {
+				$.ajax({
+					type:"POST",
+					url:"/Key/Poskey/getVI",
+					dataType:'json',		
+					cache:false,
+					data:'id='+data[i],
+					success:successResult,
+					error:DWZ.ajaxError});
+		  }
+	  } 
+		
+}
+function successResult(data)
+{
+
+  	var flag =data.flag;
+  	if(flag ==1)
+  	{
+  		var VI1 = data.VI1;
+  		var VI2 = data.VI2;  
+  	  	var tmk2 = data.tmk2;
+
+  		var port = "COM" + $.cookie('COMname');//"COM2";// "COM";	
+  		if(port == "COM")
+  		{
+  	  		alertMsg.error("请先选择串口号!");
+  	  		return;
+  	  	}
+  		else
+  		{
+  	  		//初始化串口
+  	  		var ret1 = dlkey.InitPara(port,"38400");  
+  	  		if(ret1 == "2")	
+  	  		{    
+  	  	  		alert("串口初始化成功");       	            
+  	  	        var  ret = dlkey.DownToPos(tmk2,VI1,VI2);
+  	  	        if(ret == 0)
+  	  	        {
+  	  	            alertMsg.correct("下载成功");
+  	  	        }
+  	  	         else             
+  	  	        {
+  	  	            alertMsg.error("下载失败");               
+  	  	             return;
+  	  	        }  	  	         
+  	  		}	
+  	  		else
+  	  			alertMsg.error("不能打开串口");
+  	  	}  	  	
+  	}
+  	else
+  	{
+  	  	alertMsg.error(data.message);
+  	  	return;
+  	}	
+}
+
+</script>

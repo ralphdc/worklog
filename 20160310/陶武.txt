@@ -1,0 +1,80 @@
+<div class="print_side_list">
+		<form id="printDataForm" onsubmit="" action="/Deploy/Print/getPrintLabel" method="post">
+		<div class="tableList" style="height: 120px; overflow: auto;" layouth="90">
+		<p class="ui_info_tit">信息区</p>
+			<table width="100%" class="list" id="posttable">
+				<tbody>
+					<tr>
+						<td width="30%" class="td_fr">商户名称：</td>
+						<td width="60%" class="td_ls"><input name="printmername" class="printmername textInput" id="printmername" type="text" value=""><input name="Modelid" class="printmername" id="Modelid" type="hidden" value=""></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">商户编号:</td>
+						<td class="td_ls"><input name="printmercode" class="textInput" id="printmercode" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">终端编号:</td>
+						<td class="td_ls"><input name="termno" class="textInput" id="termno" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">操作员号:</td>
+						<td class="td_ls"><input name="operatorno" class="textInput" id="operatorno" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">发卡行:</td>
+						<td class="td_ls"><input name="orgname" class="textInput" id="orgname" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">收单行:</td>
+						<td class="td_ls"><input name="acquirerno" class="textInput" id="acquirerno" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">卡号:</td>
+						<td class="td_ls"><input name="cardno" class="textInput" id="cardno" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">交易类型:</td>
+						<td class="td_ls"><input name="type" class="textInput" id="type" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">批次号:</td>
+						<td class="td_ls"><input name="batchno" class="textInput" id="batchno" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">凭证号:</td>
+						<td class="td_ls"><input name="vouchno" class="textInput" id="vouchno" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">授权码:</td>
+						<td class="td_ls"><input name="authcode" class="textInput" id="authcode" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">参考号:</td>
+						<td class="td_ls"><input name="refno" class="textInput" id="refno" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">日期/时间:</td>
+						<td class="td_ls"><input name="time" class="textInput" id="time" type="text"></td>
+					</tr>
+					<tr class="trbg">
+						<td class="td_fr">有效期:</td>
+						<td class="td_ls"><input name="expdate" class="textInput" id="expdate" type="text"></td>
+					</tr>
+					<tr>
+						<td class="td_fr">交易金额:</td>
+						<td class="td_ls"><input name="amount" class="textInput" id="amount" type="text"></td>
+					</tr>
+					<tr class="trbg selected">
+						<td class="td_fr">备注:</td>
+						<td class="td_ls"><textarea name="textarea" class="textInput" id="icparam" rows="4" cols="25"></textarea><input name="sign2hex" class="textInput" id="sign2hex" type="hidden" value="01ff00000100000000f000000080000000807f000048a964f1af8363ab2534a59ddaff002f5c1c31df2fbb7da0af7a6adc12dfa6c825b2dd8f1285ec40b3d36beab02f9b862f2e606de785286805f3196e65338355cf4485a12e4d9cf198d7698c01dd1d94a6a772f0ae3c8184db3d8ca86d6a0397bbc43f6757d2c07507f3677206ae92c5c720e6689e963bdb0faf339f6a1b14db9282882203bd5dc2324afe0c8d4c3af56507f9cefbcd3f1411023d06cb4ea6a1da5c794c3b27a34dba028b607d95641336585baa02a497344039c76ce23590ebcc044b264b95918cc96bb2e55a716b845536a03d3445444d1cb555f297f7c9064fbd80582e8f4c44cbd3f9acd2ff0000caa39630ef0bff00d0c645ce19145c4c12592f4d3255b070ba33bd47eb6a4d52065ed07108aa3a1080f2b3de22734d621765caa99f6fbb295ae68f86e629d3829418f265c7c86d8fdc2223a9b60ea6a5d7034afb312c95f3c1a3bad8474392e2118e2d75e1e1b04896fe678395057f107fbb139fee0556eb2afdda4ddb8a70ff001b34368ee3a75999106e4a11d1f50e3a2ef1a79775e0d0a9f673f3d1897e5b79ba3bf5e0b9fccb5a1953e60bcf84e006f1e540ff00fbeca8e38fae1d0a4cef8a39d7ec3a69921e34e44aed70564afcf42ba6ca0b2de1ccab988e1b449dbd1e4b96d7bdf9b3514c9454a2d88cc6b52bb7775cb22edcf252ceadff02"><input class="textInput" id="origvh" type="hidden" value=""><input class="textInput" id="inputCardno" type="hidden" value=""><input class="textInput" id="billno" type="hidden" value=""><input class="textInput" id="rtl_oriauthcode" type="hidden" value=""></td>
+					</tr>
+					<tr id="showpic">
+						<td class="td_fr">电子签名:</td>
+						<td class="td_ls" id="showsigndata"><img width="184" height="92" src="/Deploy/Print/../../sign/1457580009219519577.jpg"></td>
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+		</form>
+	</div>

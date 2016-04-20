@@ -1,0 +1,111 @@
+<div class="pageContent">
+	<form method="post" action='/index.php/Service/Addmonelement/edit' class="pageForm required-validate"
+ onsubmit="return validateCallback(this, dialogAjaxDone);" novalidate="novalidate">
+		<div class="pageFormContent" layouth="46">
+			<p>
+				<label>元素名称：</label>
+				<input class="required" type="text" id="elemName" name="elemName" maxlength="50" size="30" value
+="11"/>
+				<input type="hidden" type="text" id="id" name="id"  value="1"/>
+				<input type="hidden" type="text" id="pageNumb" name="pageNumb"  value="1"/>
+			</p>
+			<p>
+				<label>处理方式：</label>
+				<select name="dealMode" style="width:120px">
+				<option value=''>请选择</option>
+				<option value=0 selected>自动</option><option value=1 >手动</option>				</select>
+			</p>
+			<p>
+				<label>处理级别：</label>
+				<select name="priority" style="width:120px">
+				<option value=2 selected>普通</option><option value=1 >优先</option>				</select>
+			</p>
+			<p>
+				<label>元素状态：</label>
+				<select name="statusme" id="statusme" onchange="elementTypeChanged();" style="width:120px">
+				<option value=0 >关闭</option><option value=1 selected>开启</option>				</select>
+			</p>
+			<div id="timehide" style="display:none;">
+			<p>
+				<label>时间（起）：</label>
+				<input  size="30" minDate="2015-10-23" type="text" value="" id="start" name="start" readonly="1"
+ datefmt="yyyy-MM-dd HH:mm:ss" class="dohide date textInput readonly">
+			</p>
+			<p>
+				<label>时间（终）：</label>
+				<input  size="30" minDate="2015-10-23" type="text" value="" id="end" name="end" readonly="1" datefmt
+="yyyy-MM-dd HH:mm:ss" class="dohide date textInput readonly">
+			</p>
+			</div>
+			<p id="currmodeid">
+				<label>模式设置：</label>
+				<select name="currmode" style="width:120px">
+				<option value=1 selected>生产模式</option><option value=2 >调试模式</option>				</select>
+			</p>
+			<p>
+				<label>报警次数：</label>
+				<input class="required digits" type="text" id="respWarnTimes" name="respWarnTimes" maxlength="50"
+ size="30" value="1"/>
+			</p>
+			<p>
+				<label>测试次数：</label>
+				<input class="required digits" type="text" id="respTestTimes" name="respTestTimes" maxlength="50"
+ size="30" value="1"/>
+			</p>
+			
+			<p>
+				<label>时间间隔：</label>
+				<input class="required digits" type="text" id="flowInterval" name="flowInterval" maxlength="50" size
+="30" value="1"/>（单位：分钟）
+			</p>
+			
+			<p>
+				<label>发送信息数：</label>
+				<input class="required digits" type="text" id="msgNum" name="msgNum" maxlength="50" size="30" value
+="1"/>
+			</p>
+			<p>
+				<label>资源类型：</label>
+				<select name="resId" style="width:120px">
+				<option value=''>请选择</option>
+				<option value=8506 selected>渠道</option><option value=8507 >软件</option><option value=8508 >硬件烦到死<
+/option><option value=8509 >数据库</option><option value=8510 >软件111</option>				</select>
+			</p>
+			<p>
+				<label>消息备注：</label>
+				<textarea id="remarks" name="remarks" style="width: 184px; height: 83px;" maxlength="200" onchange
+="this.value=this.value.substring(0, 200)" onkeydown="this.value=this.value.substring(0, 200)" onkeyup
+="this.value=this.value.substring(0, 200)"></textarea>
+			</p>
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div>
+</div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button
+></div></div></li>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<script>
+function elementTypeChanged(){
+	if ($('#statusme').val()==1) {
+		$('.dohide').removeClass("required");
+		$('.dohide').attr("readonly",false);	
+		$('.dohide').removeClass("readonly");
+		$('.dohide').val('');
+		$('#timehide').hide();
+		$('#currmodeid').show();
+	}else{
+		$('.dohide').addClass("required");
+		$('.dohide').attr("readonly",true);
+		$('.dohide').addClass("readonly");
+		$('#timehide').show();
+		$('#currmodeid').hide();
+	}
+};
+
+elementTypeChanged();
+</script>

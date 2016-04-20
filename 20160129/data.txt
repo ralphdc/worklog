@@ -1,0 +1,41 @@
+
+close
+maximize
+新增
+Array ( 
+
+[errorCode] => 0 
+[errorMessage] => SUCCESS
+ [data] => Array (
+ [0] => Array ([deviceid] => 17495[deviceName] => 服务器[deviceDemo] =>[operator] => admin[iconurl] => server.png )
+ [1] => Array ( [deviceid] => 17496 [deviceName] => 路由器[deviceDemo] =>[operator] => admin [iconurl] => router.png ) 
+ [2] => Array ( [deviceid] => 17512[deviceName] => 防火墙 [deviceDemo] => [operator] => admin [iconurl] => transfer.png ) 
+ [3] => Array ( [deviceid] => 17513 [deviceName] => 负载均衡 [deviceDemo] => [operator] => admin [iconurl] => other.png ) 
+ 
+ 
+ 
+ ) 
+ [pageNo] => 0 [pageSize] => 0 [totalPage] => 0 [total] => 0 ) 
+ 
+ 
+ Array ( 
+ [severid] => 15882 
+ [ipv] => 172.17.6.180 
+ [hostname] => srvcntl01 
+ [username] => root 
+ [password] => 123456 
+ [stId] => 3596
+ [st_char] =>
+ [arId] => 3579 
+ [ar_name] => 
+ [sysid] => 3597 
+ [system] => 
+ [product_ids] => 16692,16736 
+ [product_names] => mpay,WEB
+ [ips] =>
+ [isVirtual] => 1 
+ [physicalVirtualType] => 物理机 
+ [virtualCorrespondPhysicalId] => 
+ [physicalName] => [cabinet_id] => 100 [cabinetname] =>
+ [ar_char] => [controlcard] => [environment] => 5 
+ [serverdemo] => [serverenv] => [systemFlag] => 2 [devicetypeid] => 1 [deviceName] => ) 

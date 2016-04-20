@@ -1,0 +1,6 @@
+'nacServerName'		=> 'http://172.20.4.20:53001/nac',	//交易网关服务
+
+
+{"method":"xgd.system.RTrmUseInfo.get","rmerchno":"302440359988026","rtermno":"10000197"}
+
+/Key/Bankkey/signAgain/SID/lr10000197;302440359988026;10000197/navTabId/L104

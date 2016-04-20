@@ -1,0 +1,22 @@
+transParamStrBytes--[B@18bb3fd
+XGD   com.xinguodu.enc.remoting.netty.EncServerHandler - chainId[000000-lhh] Object message[[B@d5b111]return data[{"logServiceId":"000000-lhh"}]
+msg---[B@f96093
+
+INFO  com.xinguodu.enc.remoting.netty.SJLCmd0420Handler4GetTMK - resp from sjl msg - 4181c81ffb0459481870670fa817d4ca2881c81ffb0459481870670fa817d4ca2852bde3a0e6a76005
+DEBUG com.xinguodu.enc.remoting.netty.SJLCmd0420Handler4GetTMK - respMsg  - 1401076c7274657374312081c81ffb0459481870670fa817d4ca2881c81ffb0459481870670fa817d4ca28
+DEBUG com.xinguodu.enc.utils.EncServerUtil - respMsg  - 1401076c7274657374312081c81ffb0459481870670fa817d4ca2881c81ffb0459481870670fa817d4ca28
+DEBUG com.xinguodu.enc.utils.EncServerUtil - respProtocol  - 5100f10000001f007b226c6f67536572766963654964223a223030303030302d6c6868227d1401076c7274657374312081c81ffb0459481870670fa817d4ca2881c81ffb0459481870670fa817d4ca28dd
+DEBUG com.xinguodu.enc.utils.EncServerUtil - null
+
+INFO  com.xinguodu.enc.remoting.netty.EncServerHandler - EncServer IOException , channel: [id: 0x00f10a53, /172.20.12.81:53006 :> /172.20.0.227:9528] msg:null
+XGD   com.xinguodu.enc.utils.EncServerUtil - chainId[000000-lhh]  respMsg[1401076c7274657374312081c81ffb0459481870670fa817d4ca2881c81ffb0459481870670fa817d4ca28]return transParams[{"logServiceId":"000000-lhh"}]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+transParamStrBytes--[B@10d7792
+XGD   com.xinguodu.enc.remoting.netty.EncServerHandler - chainId[000000-lhh] Object message[[B@1254e47]return data[{"logServiceId":"000000-lhh"}]
+msg---[B@9083c1
+INFO  com.xinguodu.enc.remoting.netty.SJLCmd0420Handler4GetTMK - resp from sjl msg - 4196cf5dbacc5cb9bb1a1fa2cfaa6d064496cf5dbacc5cb9bb1a1fa2cfaa6d0644ca3c3eefa95f53ef
+DEBUG com.xinguodu.enc.remoting.netty.SJLCmd0420Handler4GetTMK - respMsg  - 1401076c7274657374312096cf5dbacc5cb9bb1a1fa2cfaa6d064496cf5dbacc5cb9bb1a1fa2cfaa6d0644
+DEBUG com.xinguodu.enc.utils.EncServerUtil - respMsg  - 1401076c7274657374312096cf5dbacc5cb9bb1a1fa2cfaa6d064496cf5dbacc5cb9bb1a1fa2cfaa6d0644
+DEBUG com.xinguodu.enc.utils.EncServerUtil - respProtocol  - 5100f10000001f007b226c6f67536572766963654964223a223030303030302d6c6868227d1401076c7274657374312096cf5dbacc5cb9bb1a1fa2cfaa6d064496cf5dbacc5cb9bb1a1fa2cfaa6d0644dd
+XGD   com.xinguodu.enc.utils.EncServerUtil - chainId[000000-lhh]  respMsg[1401076c7274657374312096cf5dbacc5cb9bb1a1fa2cfaa6d064496cf5dbacc5cb9bb1a1fa2cfaa6d0644]return transParams[{"logServiceId":"000000-lhh"}]
+

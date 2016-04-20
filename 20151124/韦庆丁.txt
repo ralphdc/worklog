@@ -1,0 +1,2 @@
+http://172.20.12.51:8080
+config.instance.current.update

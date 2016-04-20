@@ -1,0 +1,203 @@
+http://burylife.sinaapp.com/127.html
+************************
+ （一）Ice安装
+************************
+Ice依赖软件
+（1）gcc 3.3以上。
+（2）Berkeley DB 4.8以上
+（3）expat 2.0.1
+（4）bzip2 1.0.x
+（5）mcpp 2.7.2 
+
+
+# tar zxvf ThirdParty-Sources-3.5.1.tar.gz 
+# cd ThirdParty-Sources-3.5.1
+# ls
+db  db-5.3.21.NC.tar.gz  jgoodies-common-1_4_0.zip  jgoodies-forms-1_6_0.zip  jgoodies-looks-2_5_2.zip  mcpp  mcpp-2.7.2.tar.gz  README
+# tar zxvf mcpp-2.7.2.tar.gz 
+ # cd mcpp-2.7.2
+ patch -p0 < ../mcpp/patch.mcpp.2.7.2
+ 
+./configure --prefix=/usr/local/ICE-3.5.1/mcpp-2.7.2/ CFLAGS=-fPIC -enable-mcpplib -disable-shared
+make && make install
+# cd  ../
+# tar zxvf db-5.3.21.NC.tar.gz 
+# cd db-5.3.21.NC
+patch -p0 < ../db/patch.db.5.3.21 
+# cd  build_unix/
+
+../dist/configure --prefix=/usr/local/ICE-3.5.1/BerkeleyDB.5.3/ --enable-cxx 
+  make && make install
+
+
+
+
+# tar zxvf ThirdParty-Sources-3.3.0.tar.gz
+bzip2-1.0.5.tar.gz
+expat-2.0.1.tar.gz
+looks-2_1_4.zip
+mcpp-2.7.tar.gz
+README
+db-4.6.21.NC.tar.gz
+forms-1_2_0.zip
+mcpp/
+mcpp/mcpp-2.7.patch2
+mcpp/mcpp-2.7.patch
+openssl-0.9.8g.tar.gz
+
+
+# tar zxvf bzip2-1.0.6.tar.gz 
+# cd bzip2-1.0.6
+ 修改Makefile，将PREFIX指向 
+ PREFIX=/usr/local/ICE-3.5.1/bzip2-1.0.6
+
+修改bzip2-1.0.6的Makefile文件 
+
+CC=gcc ---> CC=gcc -fPIC  
+
+ 
+
+即
+
+CC=gcc -fPIC
+
+AR=ar
+
+RANLIB=ranlib
+
+LDFLAGS=
+
+
+make && make install
+
+
+
+
+# tar zxvf expat-2.0.1.tar.gz 
+
+# cd expat-2.0.1
+
+./configure --prefix=/usr/local/ICE-3.5.1/expat-2.0.1/
+  make && make install
+ 
+
+# tar zxvf openssl-1.0.1m.tar.gz 
+cd openssl-1.0.1m
+./config --prefix=/usr/local/ICE-3.5.1/openssl -fPIC  enable-shared 
+ make && make install
+
+
+
+# tar zxvf libiconv-1.14.tar.gz 
+cd libiconv-1.14
+./configure --prefix=/usr/local 
+ make && make install
+
+
+全部/usr/local/ICE-3.5.1/ 软件的lib  都要复制 lib 到 lib64
+cd  /usr/local/ICE-3.5.1/
+cp -r BerkeleyDB.5.3/lib/ BerkeleyDB.5.3/lib64
+cp -r bzip2-1.0.6/lib/  bzip2-1.0.6/lib64
+cp -r openssl/lib/  openssl/lib64
+cp -r expat-2.0.1/lib/  expat-2.0.1/lib64
+cp -r mcpp-2.7.2/lib mcpp-2.7.2/lib64
+
+# 主要复制库文件，文件夹不用复制
+cp -f /usr/local/ICE-3.5.1/openssl/lib/* /usr/lib
+#tar zxvf Ice-3.5.1.tar.gz   要先解压ICE
+cd Ice-3.5.1/cpp/
+cp -f /usr/local/ICE-3.5.1/openssl/lib/* $srcpath/Ice-3.5.1/cpp/lib
+
+#往/lib和/usr/lib里面加载库  要使用ldconfig，要不然系统找不到相应的库
+ldconfig
+ldconfig -v 
+
+# cd Ice-3.5.1/cpp/
+# vim config/Make.rules
+
+修改安装包路径：
+prefix                  ?= /usr/local/ICE-3.5.1/Ice-$(VERSION)
+embedded_runpath_prefix ?= /usr/local/ICE-3.5.1/Ice-$(VERSION_MAJOR).$(VERSION_MINOR)
+
+BZIP2_HOME             ?= /usr/local/ICE-3.5.1/bzip2-1.0.6
+DB_HOME        ?= /usr/local/ICE-3.5.1/BerkeleyDB.5.3
+EXPAT_HOME             ?= /usr/local/ICE-3.5.1/expat-2.0.1
+OPENSSL_HOME          ?=  /usr/local/ICE-3.5.1/openssl
+MCPP_HOME            ?=   /usr/local/ICE-3.5.1/mcpp-2.7.2
+
+修改 vim   $srcpath/Ice-3.5.1/cpp/config/Make.rules.Linux
+在147行  BASELIBS = -lIceUtil -lpthread -lrt -liconv    加上-liconv
+
+将目录/usr/local/lib  加入到/etc/ld.so.conf  
+
+make && make install
+至此，安装ICE完毕。
+
+
+
+
+
+*************************
+编译PHP扩展ICE
+*************************
+等PHP安装完成后 ICE PHP
+cd /root/tool/Ice-3.5.1/php
+vim config/Make.rules.php
+修改安装包路径：
+prefix                   ?= /usr/local/ICE-3.5.1/Ice-$(VERSION)
+embedded_runpath_prefix  ?= /usr/local/ICE-3.5.1/Ice-$(VERSION_MAJOR).$(VERSION_MINOR)
+PHP_HOME                ?= /usr/local/php
+
+
+make && make install
+
+设置ICE环境变量
+
+# vim /etc/profile
+
+
+
+export PHPPATH=/usr/local/ICE-3.5.1/Ice-3.5.1/php
+export ICE_HOME=/usr/local/ICE-3.5.1/Ice-3.5.1
+export PATH=$PATH:$ICE_HOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ICE_HOME/lib64
+export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE INPUTRC ICE_HOME
+
+
+
+#source /etc/profile
+
+测试是否成功：
+icegridnode -v
+icegridadmin --version
+
+3.5.1 
+
+B. PHP ICE
+
+1.配置php.ini加入Icephp.so扩展
+
+/usr/local/php/lib/php/extensions/no-debug-zts-20121212/
+
+
+cp /usr/local/ICE-3.5.1/Ice-3.5.1/php/IcePHP.so /usr/local/php/lib/php/extensions/no-debug-zts-20121212/
+cp /usr/local/ICE-3.5.1/Ice-3.5.1/php/IcePHP.so /usr/local/php/lib/php/extensions/no-debug-zts-20100525/
+ 
+#/usr/local/php/bin/php -m |grep redis
+redis
+# vim /usr/local/php/etc/php.ini 
+
+
+
+; Directory in which the loadable extensions (modules) reside.
+
+extension = "IcePHP.so"
+
+#  /usr/local/php/bin/php -m |grep ice
+ice
+
+
+
+; UNIX: "/path1:/path2"
+;include_path = ".:/php/includes"
+include_path = ".:/php/includes:/usr/local/ICE-3.5.1/Ice-3.5.1/php"

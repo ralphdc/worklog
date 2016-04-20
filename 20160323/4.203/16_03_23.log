@@ -1,0 +1,54 @@
+[ 2016-03-23T22:24:17+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitor?id=180&start=1&_=1458742374927
+ERR: ////////////////////////////// request_by_other post is {"id":"180","start":"1","_":"1458742374927","key":"topo.info.get","ver":"v1.0","encoding":"utf-8","timestamp":"2016-03-23 22:24:17","format":"json","data":{"submitor":"admin","envType":"5","environment":"5"},"envType":"5","signtype":"md5","cuserid":0}
+[ 2016-03-23T22:24:17+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitor?id=180&start=1&_=1458742374927
+ERR: ////////////////////////////// URL post is http://172.17.3.97:10056/omp/topo
+[ 2016-03-23T22:24:17+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitor?id=180&start=1&_=1458742374927
+ERR: request_by_other file_get_contents data is{"errorCode":0,"errorMessage":"SUCCESS","data":{"topoId":180,"topoName":"lg-test-001","nodes":3,"graph":"{\"node\":[{\"xgdid\":\"1458742235360\",\"text\":\"Node1458742235360\",\"px\":100,\"py\":100,\"width\":60,\"height\":57,\"alpha\":1,\"borderRadius\":null,\"fillColor\":\"255，255，255\",\"fontColor\":\"255,255,255\",\"scaleX\":1,\"scaleY\":1,\"selected\":false,\"shadow\":false,\"visible\":true,\"zIndex\":3,\"dtype\":\"default\",\"serverid\":0},{\"xgdid\":\"32_1458742240953\",\"text\":\"lg-0002\",\"px\":893,\"py\":143,\"width\":107,\"height\":67,\"alpha\":1,\"borderRadius\":null,\"fillColor\":\"255，255，255\",\"fontColor\":\"255,255,255\",\"scaleX\":1,\"scaleY\":1,\"selected\":false,\"shadow\":false,\"visible\":true,\"zIndex\":3,\"dtype\":\"childtp\",\"serverid\":32},{\"xgdid\":\"164_1458742244543\",\"text\":\"lig-009\",\"px\":569,\"py\":337,\"width\":107,\"height\":67,\"alpha\":1,\"borderRadius\":null,\"fillColor\":\"255，255，255\",\"fontColor\":\"255,255,255\",\"scaleX\":1,\"scaleY\":1,\"selected\":true,\"shadow\":false,\"visible\":true,\"zIndex\":3,\"dtype\":\"childtp\",\"serverid\":164}],\"link\":[{\"fromText\":\"lg-0002\",\"toText\":\"lig-009\",\"fromId\":\"32_1458742240953\",\"toId\":\"164_1458742244543\",\"width\":32,\"height\":32,\"alpha\":1,\"arrowsRadius\":15,\"bundleGap\":12,\"dcid\":1458742247294,\"dragable\":false,\"fillColor\":\"22,124,255\",\"font\":\"12px Consolas\",\"fontColor\":\"255,255,255\",\"lineJoin\":\"miter\",\"lineWidth\":3,\"shadow\":false,\"strokeColor\":\"255,255,0\"}],\"sg\":{\"stageDisplayLocation\":0,\"stageDisplayMode\":\"normal\"}}","data":"{\"ctp_164\":{\"id\":164,\"tname\":\"lig-009\"},\"ctp_32\":{\"id\":32,\"tname\":\"lg-0002\"}}","createDate":"2016-03-23 22:11:58.0","creator":"admin","environment":5,"topoType":1},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2016-03-23T22:24:17+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitor?id=180&start=1&_=1458742374927
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [2048] Declaration of GraphController::index() should be compatible with that of CommonController::index() /home/wwwroot/Competence/Application/Service/Controller/GraphController.class.php 第 3 行.
+NOTIC: [2048] Declaration of GraphController::edit() should be compatible with that of CommonController::edit() /home/wwwroot/Competence/Application/Service/Controller/GraphController.class.php 第 3 行.
+NOTIC: [8] Undefined index: MPOSSESS /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 285 行.
+NOTIC: [8] Undefined index: customProperty /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 339 行.
+NOTIC: [8] file_get_contents(): Content-type not specified assuming application/x-www-form-urlencoded /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 346 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: dName /home/wwwroot/Competence/Runtime/Cache/Service/b80e686529441192e7d31b3d7d4c7f2a.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-03-23T22:24:18+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitorNodeInfo
+ERR: ////////////////////////////// request_by_other post is {"ids":"","topoIds":"32,164","key":"topo.info.summary","ver":"v1.0","encoding":"utf-8","timestamp":"2016-03-23 22:24:18","format":"json","data":{"submitor":"admin","envType":"5","environment":"5"},"envType":"5","signtype":"md5","cuserid":0}
+[ 2016-03-23T22:24:18+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitorNodeInfo
+ERR: ////////////////////////////// URL post is http://172.17.3.97:10056/omp/topo
+[ 2016-03-23T22:24:18+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitorNodeInfo
+ERR: request_by_other file_get_contents data is
+[ 2016-03-23T22:24:18+08:00 ] 172.20.0.206 /index.php/Service/Graph/monitorNodeInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+NOTIC: [2048] Declaration of GraphController::index() should be compatible with that of CommonController::index() /home/wwwroot/Competence/Application/Service/Controller/GraphController.class.php 第 3 行.
+NOTIC: [2048] Declaration of GraphController::edit() should be compatible with that of CommonController::edit() /home/wwwroot/Competence/Application/Service/Controller/GraphController.class.php 第 3 行.
+NOTIC: [8] Undefined index: MPOSSESS /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 285 行.
+NOTIC: [8] Undefined index: customProperty /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 339 行.
+NOTIC: [8] file_get_contents(): Content-type not specified assuming application/x-www-form-urlencoded /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 346 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+

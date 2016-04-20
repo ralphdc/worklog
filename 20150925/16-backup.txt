@@ -1,0 +1,371 @@
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2010 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: 囚鸟先生
+// +----------------------------------------------------------------------
+// $Id: ArticleController.class.php 2014-05-17 23:58:02 $
+use Think\Crypt\Driver;
+
+use Org\Util\ConstructCrypt;
+
+use Key\Tools\Bytes;
+use Key\Tools\ContentHandler;
+use Key\Tools\PacketBase;
+use Key\Tools\Socket;
+
+
+class TranskeyController extends CommonController{
+
+	public function index(){
+		parent::index();
+	}
+	
+	function showHsm(){
+		parent::index('Hsmconfig');
+	}
+	
+	function insert(){
+		$_POST['HSM_ID'] = $_POST['hsm_hsm_id'];
+		parent::insert();
+	}
+	
+	function update(){
+		if($_POST['TRANS1'] !=''){
+			if(strlen($_POST['TRANS1'])!=32 )
+			{
+				$ret = array ("statusCode" => "0", "message" =>'传输密钥分量1需要为32位', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+			}
+			$tr='/^[A-Fa-f0-9]+$/';
+			if(!preg_match($tr,$_POST['TRANS1']))
+			{
+				$ret = array ("statusCode" => "0", "message" =>'请输入16进制字符', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+			}
+			
+		
+			$data = new  DESModel();
+			$data->setKey ( C('SET_KEY') );
+			$message2 = $data->des_crypt ( hexToString ( $_POST ['TRANS1'] ), 1 );
+			$_POST ['TRANS1'] = stringToHex ( $message2 );
+			
+			//索引号为11的分量需要通知TMS
+			if($_POST['ZMKINDEX'] == "11"){
+				$db = new SendmessageModel();
+				$senddata['component1'] =  $_POST ['TRANS1'];
+				$senddata['component2'] =  '';
+				$ret = $db->request_by_TMS( $senddata);
+				$ret =  json_decode($ret,true);
+				$result = $ret['success'];
+				if($result == false){
+					//失败提示
+					$this->error('TMS更新分量1失败，请重新设置!');
+				}
+			}
+		}
+		if($_POST['TRANS2'] !=''){
+			if(strlen($_POST['TRANS2'])!=32 )
+			{
+				$ret = array ("statusCode" => "0", "message" =>'传输密钥分量2需要为32位', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+			}
+			$tr='/^[A-Fa-f0-9]+$/';
+			if(!preg_match($tr,$_POST['TRANS2']))
+			{
+				$ret = array ("statusCode" => "0", "message" =>'请输入16进制字符', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+			}
+			
+			$data = new  DESModel();
+			$data->setKey ( C('SET_KEY') );
+			$message2 = $data->des_crypt ( hexToString ( $_POST ['TRANS2'] ), 1 );
+			$_POST ['TRANS2'] = stringToHex ( $message2 );
+			
+			//修改索引号为11的分量需要通知TMS
+			if($_POST['ZMKINDEX'] == "11"){
+				$db = new SendmessageModel();
+				$senddata['component1'] = '';
+				$senddata['component2'] = $_POST ['TRANS2'];
+				$ret = $db->request_by_TMS( $senddata);
+				$ret =  json_decode($ret,true);
+				$result = $ret['success'];
+				if($result == false){
+					//失败提示
+					$this->error('TMS更新分量1失败，请重新设置!');
+				}
+			}
+			
+		}
+		if($_POST['hsm_hsm_id'] !=''){
+			$_POST['HSM_ID'] =$_POST['hsm_hsm_id'];
+		}
+		
+		parent::update();
+	}
+	
+	/*
+	 * 
+	 */
+	function GetUpdate() {	
+	    
+	    
+	    
+		$reqr = "16";
+		$len = dechex(strlen($_GET['SID']));
+		$reqr .= strval($len).$_GET['SID'];
+		$pwd = $_POST['adminpassword'];
+		if($pwd !='66666666')
+		{
+				$ret = array("statusCode"=>"300","message"=>'管理员密码输入错误！',"navTabId"=>$this->navTab,
+					"forwardUrl"=>"","callbackType"=>"closeCurrent");
+				echo json_encode($ret);	exit;		
+			
+		}
+		$len = strtoupper(strval(dechex(strlen($pwd))));
+		if (strlen($len) == 1) {
+			$len = '0'.$len;
+		}
+		$reqr .= $len.$pwd."00";	
+        //echo $reqr; exit;
+		//消息体组装完成；
+		//=================================
+		
+		
+		
+		//构造transParams;
+		$logServiceId = array('logServiceId'=>'000000-lhh');
+		
+		$logStr = json_encode($logServiceId);
+		
+		
+		
+		
+		//转换成字节数组类型；
+		$logStrToBytes = strval(bin2hex($logStr));
+		
+		$paramLength = strlen($logStrToBytes);
+		$paramLength += 2;
+		
+		//求得低高位；
+		$HeighLow = Bytes::intToLHbyte($paramLength);
+		
+		//求transParams;
+		/* $trans = array();
+		foreach ($HeighLow as $k=>$v){
+		    $trans[] = $HeighLow[$k];
+		}
+		foreach ($HeighLow as $k=>$v){
+		    $trans[] = $HeighLow[$k];
+		} */
+		
+		$trans = $HeighLow[0].$HeighLow[1].$logStrToBytes;
+		
+		
+		//============================================
+		//transParams组装完成；
+		
+		//============================================
+		//组装LC
+		
+		$lcCount = strlen($trans) + strlen($msg) + 7;
+		
+		$lcHeightLow = Bytes::intToLHbyte($lcCount); //返回数组；
+		
+		//F1;
+		$f1Str = bin2hex('f1');
+		//$f1Arr = Bytes::getbytes($f1Str); //返回数组；
+		
+		//00
+		$f2 = dechex(0);
+		//$f2Arr = Bytes::integertobytes($f2);
+		
+		//f3
+		$f3Arr = $f2;
+		
+		
+		$checkStrc = $lcHeightLow[0].$lcHeightLow[1].$f1Str.$f2.$f3Arr.$trans.$msg;
+		$crcs = 0;
+		for($u=0; $u<strlen($checkStrc); $u++){
+		    $crcs ^= $checkStrc[$u];
+		}
+		
+		$sendStr = $lcHeightLow[0].$lcHeightLow[1].$f1Str.$f2.$f3Arr.$trans.$reqr.$crcs;
+		echo $sendStr;
+		
+		$packet = pack("H*", $sendStr);
+		
+		echo '--';
+		echo $packet;
+		exit;
+		
+		$socket = Socket::singleton ();
+		$sockResult = $socket->sendSocketMsg ( '172.20.0.227', '9528',$packet,1 );
+		print_r($sockResult);
+		exit;
+		
+		
+		
+		
+		
+		
+		
+		//求校验位；
+		$checkcrc = array();
+		
+		foreach ($lcHeightLow as $k=>$v){
+		    $checkcrc[] = $lcHeightLow[$k];
+		}
+		foreach ($f1Arr as $k=>$v){
+		    $checkcrc[] = $f1Arr[$k];
+		}
+		foreach ($f2Arr as $k=>$v){
+		    $checkcrc[] = $f2Arr[$k];
+		}
+		foreach ($f3Arr as $k=>$v){
+		    $checkcrc[] = $f3Arr[$k];
+		}
+		foreach ($trans as $k=>$v){
+		    $checkcrc[] = $trans[$k];
+		}
+		foreach ($msg as $k=>$v){
+		    $checkcrc[] = $msg[$k];
+		}
+		//按位与；
+		$crcs = 0;
+		foreach ($checkcrc as $k=>$v){
+		    $crcs ^= $checkcrc[$k];
+		}
+		//==============================================
+		//按位校验结束；
+		
+		//总装；
+		$sendData = array();
+		foreach ($lcHeightLow as $k=>$v){
+		    $sendData[] = $lcHeightLow[$k];
+		}
+		foreach ($f1Arr as $k=>$v){
+		    $sendData[] = $f1Arr[$k];
+		}
+		foreach ($f2Arr as $k=>$v){
+		    $sendData[] = $f2Arr[$k];
+		}
+		foreach ($f3Arr as $k=>$v){
+		    $sendData[] = $f3Arr[$k];
+		}
+		foreach ($trans as $k=>$v){
+		    $sendData[] = $trans[$k];
+		}
+		foreach ($msg as $k=>$v){
+		    $sendData[] = $msg[$k];
+		}
+		foreach ($crcs as $k=>$v){
+		    $sendData[] = $crcs[$k];
+		}
+		//将字节数组转化为string类型的数据
+		//$sendStr = Bytes::toStr($return_betys);
+		
+		$sendStr = implode('',$sendData);
+		
+		$strLen = strlen($sendStr);
+		$packet = pack("H*", $sendStr);
+		
+		
+		
+		$socket = Socket::singleton ();
+		$sockResult = $socket->sendSocketMsg ( '172.20.0.227', '9528',$packet,1 ); 
+		print_r($sockResult);
+		exit;
+		
+		
+		/* $socket->connect ( '172.20.0.227', '9528' ); //连服务器
+		$sockResult = $socket->sendRequest ( $packet); // 将包发送给服务器
+		 if($sockResult){
+		    $sockRes = $socket->getResponse();
+		}  */
+		print_r($sockResult);
+		exit;
+		
+		//sleep (3);
+		//$socket->disconnect (); //关闭链接
+		
+		exit;
+		
+		echo $reqr;exit;
+		$tuxclt = new TuxcltModel();
+		$tux_ret = $tuxclt->tuxPostRequest("/WEBENC", $reqr);
+
+		
+		list(,$str) = explode(':',$tux_ret);
+		
+		if (substr($str,0,2) == '16')
+		{
+			if ($str == '1601'){
+				$ret = array("statusCode"=>"1","message"=>'更新主机传输密钥分量成功',"navTabId"=>$this->navTab,
+					"forwardUrl"=>"","callbackType"=>"closeCurrent");
+				echo json_encode($ret);	exit;			}
+			else {
+				$ret = array("statusCode"=>"0","message"=>'更新主机传输密钥分量失败',"navTabId"=>$this->navTab,
+					"forwardUrl"=>"","callbackType"=>"closeCurrent");
+				echo json_encode($ret);	exit;
+			}
+		}
+		else
+		{
+				$ret = array("statusCode"=>"0","message"=>'调用加密机服务失败',"navTabId"=>$this->navTab,
+					"forwardUrl"=>"","callbackType"=>"closeCurrent");
+				echo json_encode($ret);	exit;
+		}
+	}
+	
+	function GetUpdateBak() {
+		$reqr = "16";
+		$len = dechex(strlen($_GET['SID']));
+		$reqr .= strval($len).$_GET['SID'];
+		$pwd = $_POST['adminpassword'];
+		if($pwd !='66666666')
+			{
+					$ret = array("statusCode"=>"300","message"=>'管理员密码输入错误！',"navTabId"=>$this->navTab,
+						"forwardUrl"=>"","callbackType"=>"closeCurrent");
+					echo json_encode($ret);	exit;
+	
+			}
+		$len = strtoupper(strval(dechex(strlen($pwd))));
+		if (strlen($len) == 1) {
+		$len = '0'.$len;
+		}
+		$reqr .= $len.$pwd."00";
+		$tuxclt = new TuxcltModel();
+			$tux_ret = $tuxclt->tuxPostRequest("/WEBENC", $reqr);
+					list(,$str) = explode(':',$tux_ret);
+	
+					if (substr($str,0,2) == '16')
+					{
+					if ($str == '1601'){
+					$ret = array("statusCode"=>"1","message"=>'更新主机传输密钥分量成功',"navTabId"=>$this->navTab,
+							"forwardUrl"=>"","callbackType"=>"closeCurrent");
+					echo json_encode($ret);	exit;			}
+					else {
+						$ret = array("statusCode"=>"0","message"=>'更新主机传输密钥分量失败',"navTabId"=>$this->navTab,
+								"forwardUrl"=>"","callbackType"=>"closeCurrent");
+						echo json_encode($ret);	exit;
+					}
+					}
+					else
+					{
+						$ret = array("statusCode"=>"0","message"=>'调用加密机服务失败',"navTabId"=>$this->navTab,
+								"forwardUrl"=>"","callbackType"=>"closeCurrent");
+						echo json_encode($ret);	exit;
+					}
+	}
+}
+
+

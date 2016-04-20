@@ -1,0 +1,8 @@
+{"statusCode":"1","message":"SUCCESS","data":{"sysName":"optserver.mpay.com","sysDescr":"Linux optserver
+.mpay.com 2.6.39-400.17.1.el6uek.x86_64 #1 SMP Fri Feb 22 18:16:18 PST 2013 x86_64","sysUpTime":"2\u59290
+\u65f648\u520606\u79d2","sysStatus":"RUNNING","totalMemory":2054968,"usedMemory":1979084,"cpuUsages"
+:[1,2],"totalStorage":97744220,"usedStorage":18009886,"storageDetail":[{"total":495844,"partition":"
+\/boot","used":56270},{"total":44614752,"partition":"\/home","used":374432},{"total":1027484,"partition"
+:"\/dev\/shm","used":0},{"total":51606140,"partition":"\/","used":17579184}],"cpu":1,"cpu1":1,"cpu2"
+:2,"mem":96,"disk":18,"path":["\/boot","\/home","\/dev\/shm","\/"],"skdata":[1,1,0,1]},"navTabId":"2c9183e1532c1050015372f741e60005"
+,"rel":"","forwardUrl":"","callbackType":""}

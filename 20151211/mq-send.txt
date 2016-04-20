@@ -1,0 +1,51 @@
+将数据插入队列中
+
+<?php
+class DebugApp extends BaseAppEx
+{
+    /**
+         * test
+         */
+
+    public function index()
+    {
+
+        $randId = uniqid();
+        $time = date('Y-m-d H:i:s', time());
+
+        $data = array();
+
+        $data[$randId][0] = array('msg1', $time);
+        $data[$randId][1] = array('msg2', $time);
+        $data[$randId][2] = array('msg3', $time);
+
+        $data = json_encode($data);
+
+        $this->_sendMQ($data);
+    }
+    
+
+    private function _sendMQ($data)
+    {
+        try {
+            $stomp = new Stomp($this->conf['MessageQueue']['stompUri']);
+        } catch (StompException $e) {
+            //die('Connection failed: '.$e->getMessage());
+            throw new Exception($e->getMessage());
+        }
+
+        if (empty($data)) {
+            throw new Exception('Parameter must not be empty!');
+        }
+
+        $isSucc = $stomp->send($this->conf['MessageQueue']['queueUri'], $data, array('persistent' => 'true'));
+        if (false == $isSucc)
+        {
+            throw new Exception("$data send failed!");
+        }
+
+        unset($stomp);
+    }
+}
+?>
+

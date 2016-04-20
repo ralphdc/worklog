@@ -1,0 +1,1722 @@
+[ 2015-11-19T11:28:03+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447903683139
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:28:03+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447903683139
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"2"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:28:03","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:28:03+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447903683139
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":["000","111","1900","1901","222","333","444","555","666","777","778899","888","999","add","pay","poiu","ralph","rty","uuu","w34","zxcv","随时"],"0":["*","1","2","22","3","33","4","8888","9","D","QQ","b","c","dd","dddd","e","h","k","kk","lla","mm","qqq","r","t","v","w","x","z","默认组"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:28:03+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447903683139
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:28:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903707152
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:28:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903707152
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"000","_":"1447903707152","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:28:27","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:28:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903707152
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:28:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903707152
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447903734426
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447903734426
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"111","_":"1447903734426","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:28:54","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447903734426
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447903734426
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903734856
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903734856
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"000","_":"1447903734856","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:28:54","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903734856
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:28:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903734856
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:28:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903736403
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:28:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903736403
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"000","_":"1447903736403","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:28:56","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:28:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903736403
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:28:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903736403
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:29:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903760190
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:29:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903760190
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"000","_":"1447903760190","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:29:20","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:29:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903760190
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:29:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447903760190
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2015-11-19T11:30:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/%E9%BB%98%E8%AE%A4%E7%BB%84&_=1447903817586
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/%E9%BB%98%E8%AE%A4%E7%BB%84&_=1447903817586
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"\u9ed8\u8ba4\u7ec4","_":"1447903817586","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:17","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/%E9%BB%98%E8%AE%A4%E7%BB%84&_=1447903817586
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"","providergrouid":null,"consumergroupid":"默认组","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"\"\"","providergrouid":"默认组","consumergroupid":null,"path":"","ip":"172.17.3.68","port":10110,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"19432","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"\"\"","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"acc_job_provider","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/approot/acc/pjjialian-pmacc-ptjob-ps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.2.8","pid":"30084","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"fund_mpay_acc_service_provider","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/approot/fund/fund_mpay_acc_service_provider","ip":"172.17.3.68","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"9243","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"fund_mpay_client_provider","providergrouid":null,"consumergroupid":"默认组","path":"/opt/apache-tomcat-7.0.53/webapps/mpay/WEB-INF","ip":"172.20.4.15","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"2904","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"fund_mpay_web_provider","providergrouid":"默认组","consumergroupid":"默认组","path":"","ip":"172.17.3.68","port":10110,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"19432","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"icespos_service","providergrouid":"默认组","consumergroupid":null,"path":"/usr/local/approot/tradengine_spos_service","ip":"172.20.5.58","port":11001,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"31703","treessname":null,"systemflag":null,"framework":"2.0.2","congroupflag":null,"progroupflag":null},{"servicename":"memberShip","providergrouid":"默认组","consumergroupid":null,"path":"/usr/local/approot/member_agent","ip":"172.17.3.69","port":10009,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"7937","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"mpay_acc","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/approot/mpay/mpay_acc","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"15222","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"mpay_msd","providergrouid":"默认组","consumergroupid":null,"path":"/usr/local/approot/mpay/mpay_msd","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.2","pid":"12654","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"mt_service","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/approot/pdmt_branches/pdmt-pbactdata","ip":"172.17.6.157","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"18216","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"mt_service","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/approot/tomcat-8.0.24_mt_merchant_web/webapps/merchant_web/WEB-INF","ip":"172.20.5.151","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"18381","treessname":null,"systemflag":null,"framework":"2.0.2","congroupflag":null,"progroupflag":null},{"servicename":"null","providergrouid":"默认组","consumergroupid":null,"path":"","ip":"172.17.3.68","port":10110,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"19432","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"pjjialian-pmacc-ptdubbo-ps","providergrouid":"默认组","consumergroupid":null,"path":"/usr/local/approot/acc/pjjialian-pmacc-ptdubbo-ps","ip":"172.17.3.69","port":10103,"weight":"100","flag":null,"firstflag":"2","version":"0.0.1","pid":"5367","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service","providergrouid":null,"consumergroupid":"默认组","path":"/usr/local/apache-tomcat-7.0.55/webapps/tms","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/%E9%BB%98%E8%AE%A4%E7%BB%84&_=1447903817586
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-19T11:30:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/*&_=1447903823454
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/*&_=1447903823454
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"*","_":"1447903823454","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:23","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/*&_=1447903823454
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/*&_=1447903823454
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1&_=1447903824312
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1&_=1447903824312
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"1","_":"1447903824312","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:24","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1&_=1447903824312
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"fund_mpay_web_provider","providergrouid":"w,e,r,t,1","consumergroupid":"w,e,r,t,1","path":"/usr/local/approot/fund/fund_mpay_web_provider","ip":"172.17.3.68","port":10110,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"19432","treessname":null,"systemflag":null,"framework":"0.0.0","congroupflag":null,"progroupflag":null},{"servicename":"fund_mpay_web_provider","providergrouid":"w,e,r,t,1","consumergroupid":"w,e,r,t,1","path":"/usr/local/approot/fund/fund_mpay_web_provider","ip":"172.17.3.68","port":10110,"weight":"100","flag":null,"firstflag":"2","version":"1.0.0","pid":"19432","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"idgen_server","providergrouid":"w,e,r,t,1","consumergroupid":"w,e,r,t,1","path":"/usr/local/approot/base_service_v2/idgen_server","ip":"172.17.3.69","port":10012,"weight":"3","flag":null,"firstflag":"2","version":"0.0.1","pid":"29668","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1&_=1447903824312
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/2&_=1447903824813
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/2&_=1447903824813
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"2","_":"1447903824813","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:24","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/2&_=1447903824813
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/2&_=1447903824813
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-19T11:30:26+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/33&_=1447903826230
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:26+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/33&_=1447903826230
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"33","_":"1447903826230","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:26","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:26+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/33&_=1447903826230
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service","providergrouid":"lla,22","consumergroupid":"kk,33","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.131","port":10000,"weight":"4","flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:26+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/33&_=1447903826230
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903828025
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903828025
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"8888","_":"1447903828025","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:28","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903828025
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"fund_account_error_center","providergrouid":null,"consumergroupid":"qqq,dddd,8888","path":"/usr/local/approot/fund/fund_account_error_center","ip":"172.17.3.68","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"23310","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903828025
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/4&_=1447903828574
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/4&_=1447903828574
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"4","_":"1447903828574","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:28","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/4&_=1447903828574
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/4&_=1447903828574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903829012
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903829012
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"8888","_":"1447903829012","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:29","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903829012
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"fund_account_error_center","providergrouid":null,"consumergroupid":"qqq,dddd,8888","path":"/usr/local/approot/fund/fund_account_error_center","ip":"172.17.3.68","port":null,"weight":null,"flag":null,"firstflag":"2","version":"1.0.0","pid":"23310","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/8888&_=1447903829012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/9&_=1447903829380
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/9&_=1447903829380
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"9","_":"1447903829380","systemflag":"2"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 11:30:29","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/9&_=1447903829380
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"null","providergrouid":null,"consumergroupid":"9,*","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.69","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"*","path":"/","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null},{"servicename":"tms_service1","providergrouid":null,"consumergroupid":"9","path":"/usr/local/apache-tomcat-7.0.55/webapps","ip":"172.17.3.131","port":null,"weight":null,"flag":null,"firstflag":"2","version":"2.2.7","pid":"28261","treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/9&_=1447903829380
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T11:42:38+08:00 ] 127.0.0.1 /index.php/Admin/SysMonitor?_=1447904558370
+ERR: ////////////////////////////// request_by_othersss post is {"data":"","key":"watermoni.setting.list"}
+[ 2015-11-19T11:42:59+08:00 ] 127.0.0.1 /index.php/Admin/SysMonitor?_=1447904558370
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of SysMonitorController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\SysMonitorController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'page' E:\www\Sermanage\Application\Admin\Model\CommonModel.class.php 第 1041 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\www\Sermanage\Application\Admin\Model\CommonModel.class.php 第 1041 行.
+
+[ 2015-11-19T13:51:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Service\Controller\IndexController.class.php 第 3 行.
+
+[ 2015-11-19T13:51:58+08:00 ] 127.0.0.1 /index.php/Service/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:51:59+08:00 ] 127.0.0.1 /index.php/Service/Public/checkLogin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] setcookie() expects parameter 3 to be long, string given E:\www\Sermanage\Application\Service\Controller\PublicController.class.php 第 256 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:51:59+08:00 ] 127.0.0.1 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Service\Controller\IndexController.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: volist E:\www\Sermanage\Runtime\Cache\Service\573a565d88655dd6d35e2fd9412a37b4.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:52:04+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912324125
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:52:04+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912324125
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:52:04","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:52:04+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912324125
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:52:04+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912324125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:52:28+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912348828
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:52:28+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912348828
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:52:28","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:52:28+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912348828
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:52:28+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912348828
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 20 行.
+NOTIC: [8] Array to string conversion E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:56:17+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912577847
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:56:17+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912577847
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:56:17","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:56:18+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912577847
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:56:18+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912577847
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'groupName' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 38 行.
+NOTIC: [2] Illegal string offset 'groupId' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 39 行.
+NOTIC: [2] Illegal string offset 'groupDescription' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php:9) E:\www\Sermanage\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:01+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912621378
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:01+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912621378
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:01","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:01+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912621378
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:01+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912621378
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'groupName' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'groupId' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'groupDescription' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912624692
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912624692
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"1900","_":"1447912624692","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:04","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912624692
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912624692
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015599s ]
+
+[ 2015-11-19T13:57:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1901&_=1447912625512
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1901&_=1447912625512
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"1901","_":"1447912625512","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:05","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1901&_=1447912625512
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1901&_=1447912625512
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/222&_=1447912626180
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/222&_=1447912626180
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"222","_":"1447912626180","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:06","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/222&_=1447912626180
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/222&_=1447912626180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/333&_=1447912626671
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/333&_=1447912626671
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"333","_":"1447912626671","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:06","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/333&_=1447912626671
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/333&_=1447912626671
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/444&_=1447912627136
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/444&_=1447912627136
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"444","_":"1447912627136","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:07","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/444&_=1447912627136
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/444&_=1447912627136
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/555&_=1447912627522
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/555&_=1447912627522
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"555","_":"1447912627522","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:07","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/555&_=1447912627522
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/555&_=1447912627522
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/666&_=1447912627852
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/666&_=1447912627852
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"666","_":"1447912627852","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:07","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/666&_=1447912627852
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/666&_=1447912627852
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/uuu&_=1447912629624
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/uuu&_=1447912629624
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"uuu","_":"1447912629624","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:09","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/uuu&_=1447912629624
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/uuu&_=1447912629624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/rty&_=1447912630256
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/rty&_=1447912630256
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"rty","_":"1447912630256","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:10","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/rty&_=1447912630256
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/rty&_=1447912630256
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630609
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630609
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"ralph","_":"1447912630609","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:10","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630609
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:10+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630609
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630971
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630971
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"ralph","_":"1447912630971","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:11","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630971
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912630971
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912631291
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912631291
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"poiu","_":"1447912631291","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:11","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912631291
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912631291
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912633751
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912633751
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"pay","_":"1447912633751","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:13","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912633751
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"base_login_service","providergrouid":null,"consumergroupid":"add,w34,pay","path":"/usr/dev/","ip":"127.0.0.1","port":null,"weight":null,"flag":null,"firstflag":"2","version":null,"pid":null,"treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912633751
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912634186
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912634186
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"poiu","_":"1447912634186","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:14","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912634186
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912634186
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912634954
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912634954
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"pay","_":"1447912634954","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:15","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912634954
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[{"servicename":"base_login_service","providergrouid":null,"consumergroupid":"add,w34,pay","path":"/usr/dev/","ip":"127.0.0.1","port":null,"weight":null,"flag":null,"firstflag":"2","version":null,"pid":null,"treessname":null,"systemflag":null,"framework":null,"congroupflag":null,"progroupflag":null}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/pay&_=1447912634954
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912635526
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912635526
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"poiu","_":"1447912635526","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:15","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912635526
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/poiu&_=1447912635526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:16+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912636163
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:16+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912636163
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"ralph","_":"1447912636163","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:16","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:16+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912636163
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:16+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/ralph&_=1447912636163
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447912638591
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447912638591
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"000","_":"1447912638591","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:18","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447912638591
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/000&_=1447912638591
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447912639182
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447912639182
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"111","_":"1447912639182","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:19","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447912639182
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/111&_=1447912639182
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912639650
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912639650
+ERR: ////////////////////////////// request_by_other content is json={"data":{"servicename":"1900","_":"1447912639650","systemflag":"1"},"key":"service.icegroup.conpro.get","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:57:19","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912639650
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"default":[]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:57:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/IceWeight/showGroup/servicename/1900&_=1447912639650
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:58:27+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912707075
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:58:27+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912707075
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:58:27","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:58:27+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912707075
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:58:27+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912707075
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'groupName' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'groupId' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'groupDescription' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:58:45+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912725772
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:58:45+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912725772
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:58:45","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:58:45+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912725772
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:58:45+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912725772
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'groupName' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'groupId' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'groupDescription' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:59:44+08:00 ] 127.0.0.1 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Service\Controller\IndexController.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: volist E:\www\Sermanage\Runtime\Cache\Service\573a565d88655dd6d35e2fd9412a37b4.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:59:44+08:00 ] 127.0.0.1 /index.php/Service/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' E:\www\Sermanage\Application\Service\Conf\config.php 第 3 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED - assumed 'HTTP_X_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 9 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED_FOR - assumed 'HTTP_FORWARDED_FOR' E:\www\Sermanage\Application\Service\Conf\config.php 第 12 行.
+NOTIC: [8] Use of undefined constant HTTP_FORWARDED - assumed 'HTTP_FORWARDED' E:\www\Sermanage\Application\Service\Conf\config.php 第 15 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' E:\www\Sermanage\Application\Service\Conf\config.php 第 19 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Service\Controller\IndexController.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: volist E:\www\Sermanage\Runtime\Cache\Service\573a565d88655dd6d35e2fd9412a37b4.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:59:48+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912788161
+ERR: ////////////////////////////// request_by_other URL is http://172.17.3.86:8081/omp/servicectrol
+[ 2015-11-19T13:59:48+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912788161
+ERR: ////////////////////////////// request_by_other content is json={"data":{"systemflag":"1"},"key":"service.icegroup.tree","ver":"v1.0","encoding":"utf-8","timestamp":"2015-11-19 13:59:48","format":"json","appid":"0001","signtype":"md5","cuserid":0}
+[ 2015-11-19T13:59:48+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912788161
+ERR: ////////////////////////////// request_by_other response is {"errorCode":0,"errorMessage":"SUCCESS","data":{"1":[{"groupId":24,"groupName":"000","operaterPerson":"admin","operaterTime":"2015-11-18 17:29:06.0","groupDescription":"000"},{"groupId":25,"groupName":"111","operaterPerson":"admin","operaterTime":"2015-11-18 17:35:15.0","groupDescription":"1111"},{"groupId":28,"groupName":"1900","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:00.0","groupDescription":"1900"},{"groupId":29,"groupName":"1901","operaterPerson":"admin","operaterTime":"2015-11-18 17:41:18.0","groupDescription":"1901"},{"groupId":26,"groupName":"222","operaterPerson":"admin","operaterTime":"2015-11-18 17:36:46.0","groupDescription":"222"},{"groupId":27,"groupName":"333","operaterPerson":"admin","operaterTime":"2015-11-18 17:40:07.0","groupDescription":"333"},{"groupId":18,"groupName":"444","operaterPerson":"admin","operaterTime":"2015-11-18 17:03:37.0","groupDescription":"444"},{"groupId":19,"groupName":"555","operaterPerson":"admin","operaterTime":"2015-11-18 17:04:30.0","groupDescription":"555"},{"groupId":20,"groupName":"666","operaterPerson":"admin","operaterTime":"2015-11-18 17:06:00.0","groupDescription":"666"},{"groupId":21,"groupName":"777","operaterPerson":"admin","operaterTime":"2015-11-18 17:20:15.0","groupDescription":"777"},{"groupId":30,"groupName":"778899","operaterPerson":"admin","operaterTime":"2015-11-19 09:36:03.0","groupDescription":"778899"},{"groupId":22,"groupName":"888","operaterPerson":"admin","operaterTime":"2015-11-18 17:21:28.0","groupDescription":"888"},{"groupId":23,"groupName":"999","operaterPerson":"admin","operaterTime":"2015-11-18 17:22:22.0","groupDescription":"999"},{"groupId":5,"groupName":"add","operaterPerson":"ADMIN","operaterTime":"2015-10-20 15:27:15.0","groupDescription":null},{"groupId":13,"groupName":"pay","operaterPerson":"admin","operaterTime":"2015-10-30 12:01:32.0","groupDescription":"资金使用"},{"groupId":16205,"groupName":"poiu","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:59.0","groupDescription":"poiu"},{"groupId":16,"groupName":"ralph","operaterPerson":"admin","operaterTime":"2015-11-18 16:03:07.0","groupDescription":null},{"groupId":15,"groupName":"rty","operaterPerson":"admin","operaterTime":"2015-11-18 16:02:30.0","groupDescription":null},{"groupId":17,"groupName":"uuu","operaterPerson":"admin","operaterTime":"2015-11-18 17:02:07.0","groupDescription":"uuu"},{"groupId":12,"groupName":"w34","operaterPerson":"admin","operaterTime":"2015-10-23 11:54:51.0","groupDescription":null},{"groupId":16204,"groupName":"zxcv","operaterPerson":"admin","operaterTime":"2015-11-19 10:50:26.0","groupDescription":"zxcv"},{"groupId":14,"groupName":"随时","operaterPerson":"admin","operaterTime":"2015-11-18 15:56:12.0","groupDescription":null}],"0":["T6"]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2015-11-19T13:59:48+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight?_=1447912788161
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+NOTIC: [8] Undefined variable: className E:\www\Sermanage\Application\Admin\Common\function.php 第 135 行.
+NOTIC: [2] Illegal string offset 'groupName' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 36 行.
+NOTIC: [2] Illegal string offset 'groupId' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 37 行.
+NOTIC: [2] Illegal string offset 'groupDescription' E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-19T13:59:53+08:00 ] 127.0.0.1 /index.php/Admin/IceWeight/groupDelete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] The use statement with non-compound name 'Think' has no effect E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Declaration of CommonController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\www\Sermanage\Application\Admin\Controller\CommonController.class.php 第 477 行.
+NOTIC: [2048] Declaration of IceWeightController::index() should be compatible with CommonController::index($dwz_db_name = '') E:\www\Sermanage\Application\Admin\Controller\IceWeightController.class.php 第 3 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

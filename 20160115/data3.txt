@@ -1,0 +1,4 @@
+[
+{"text":"optserver.mpay.com","px":735,"py":171,"width":60,"height":57,"alpha":1,"borderRadius":null,"fillColor":"255，255，255","fontColor":"255,255,255","image":{"alarm":{}},"scaleX":1,"scaleY":1,"selected":true,"shadow":false,"visible":true,"zIndex":3},
+{"text":"srvcntl01","px":339,"py":97,"width":60,"height":57,"alpha":1,"borderRadius":null,"fillColor":"255，255，255","fontColor":"255,255,255","image":{"alarm":{}},"scaleX":1,"scaleY":1,"selected":false,"shadow":false,"visible":true,"zIndex":3}
+]"

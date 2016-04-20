@@ -1,0 +1,138 @@
+  private String sid;
+
+    /**
+
+     * 传输密钥分量1
+
+     */
+
+    private String trans1;
+
+    /**
+
+     * 传输密钥分量2
+
+     */
+
+    private String trans2;
+
+    /**
+
+     * 区域主密钥索引号
+
+     */
+
+    private int zmkIndex;
+
+    
+
+    /**
+
+     * 硬件加密机配置ID
+
+     */
+
+    private String hsmId;
+
+    
+
+    /**
+
+     * 添加人1
+
+     */
+
+    private String addPersion1;
+
+    
+
+    /**
+
+     * 添加日期1
+
+     */
+
+    private String addDate1;
+
+    
+
+    /**
+
+     * etransKey
+
+     */
+
+    private String etransKey;
+
+    
+
+    /**
+
+    * 添加人2
+
+    */
+
+    private String addPersion2;
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Array
+(
+    [MERNO] => 8899897678
+    [POSNO] => 10000230
+    [TMKINDEX] => 78
+    [TMKLEN] => 1
+    [zmk_zmkindex] => 22
+    [ZMKINDEX2] => 12
+    [hsm_hsm_ip] => 172.30.3.21
+    [hsm_hsm_id] => 
+    [ADDPERSON] => 超级管理员
+    [ADDDATE] => 2015-10-23 10:37:08
+)
+
+
+======================================================
+
+++++++++++++++++++Array
+(
+    [MERNO] => 8899897678
+    [POSNO] => 10000230
+    [TMKINDEX] => 78
+    [TMKLEN] => 1
+    [zmk_zmkindex] => 36
+    [ZMKINDEX2] => 12
+    [hsm_hsm_ip] => 172.30.3.21
+    [hsm_hsm_id] => 
+    [ADDPERSON] => 超级管理员
+    [ADDDATE] => 2015-10-23 10:43:38
+)
+-----------------Array
+(
+    [MERNO] => 8899897678
+    [POSNO] => 10000230
+    [TMKINDEX] => 78
+    [TMKLEN] => 1
+    [zmk_zmkindex] => 36
+    [ZMKINDEX2] => 12
+    [hsm_hsm_ip] => 172.30.3.21
+    [hsm_hsm_id] => 
+    [ADDPERSON] => 超级管理员
+    [ADDDATE] => 2015-10-23 10:47:07
+    [ZMKINDEX1] => 36
+    [HSM_ID] => 
+    [ISUSE] => 1
+)
+

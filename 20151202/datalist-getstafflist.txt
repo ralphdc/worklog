@@ -1,0 +1,88 @@
+Array
+(
+    [errorCode] => 0
+    [errorMessage] => SUCCESS
+    [data] => Array
+        (
+            [groupId] => 16447
+            [staff] => Array
+                (
+                    [0] => Array
+                        (
+                            [staffId] => 2014
+                            [staffNo] => 
+                            [staffName] => 黄峰
+                            [mobile] => 
+                            [email] => 
+                            [microBlogId] => 
+                            [wechatId] => 
+                            [createDate] => 
+                            [editDate] => 
+                            [rights] => 
+                        )
+
+                    [1] => Array
+                        (
+                            [staffId] => 6472
+                            [staffNo] => 
+                            [staffName] => 孙火
+                            [mobile] => 
+                            [email] => 
+                            [microBlogId] => 
+                            [wechatId] => 
+                            [createDate] => 
+                            [editDate] => 
+                            [rights] => 
+                        )
+
+                    [2] => Array
+                        (
+                            [staffId] => 14449
+                            [staffNo] => 
+                            [staffName] => 韦庆丁
+                            [mobile] => 
+                            [email] => 
+                            [microBlogId] => 
+                            [wechatId] => 
+                            [createDate] => 
+                            [editDate] => 
+                            [rights] => 
+                        )
+
+                    [3] => Array
+                        (
+                            [staffId] => 16005
+                            [staffNo] => 
+                            [staffName] => 唐春苗
+                            [mobile] => 
+                            [email] => 
+                            [microBlogId] => 
+                            [wechatId] => 
+                            [createDate] => 
+                            [editDate] => 
+                            [rights] => 
+                        )
+
+                    [4] => Array
+                        (
+                            [staffId] => 16486
+                            [staffNo] => 
+                            [staffName] => dfa
+                            [mobile] => 
+                            [email] => 
+                            [microBlogId] => 
+                            [wechatId] => 
+                            [createDate] => 
+                            [editDate] => 
+                            [rights] => 
+                        )
+
+                )
+
+        )
+
+    [pageNo] => 0
+    [pageSize] => 0
+    [totalPage] => 0
+    [total] => 0
+)

@@ -1,0 +1,181 @@
+Array ( 
+
+	[dbDSN] => Array ( 
+		
+		[driver] => Oracle
+		 [host] => 172.20.4.1 
+		 [login] => spos_user3 
+		 [password] => 2867552BB5F1 
+		 [database] => 172.20.4.1:1521/trade 
+		 
+		 ) 
+ 
+ ) 
+
+
+
+delete from spos_user3.t_posinfo t where t.merchno=303440156910906 and t.termno=47232472
+
+Array
+(
+    [tableName] => T_POSINFO
+    [primaryKey] => merchno
+    [pareTable] => Array
+        (
+            [getColumns] => Array
+                (
+                    [0] => merchno
+                    [1] => termno
+                    [2] => operdate
+                    [3] => modeltype
+                    [4] => commtype
+                    [5] => remark
+                )
+
+            [conColumns] => Array
+                (
+                    [0] => merchno
+                    [1] => termno
+                    [2] => modeltype
+                    [3] => commtype
+                    [4] => operdate
+                    [5] => remark
+                )
+
+            [searchCol] => Array
+                (
+                    [0] => merchno
+                    [1] => termno
+                    [2] => modeltype
+                    [3] => commtype
+                    [4] => remark
+                )
+
+        )
+
+    [foreignTable] => Array
+        (
+            [modeltype] => Array
+                (
+                    [tableClass] => Table_Spos3_Posmodel
+                    [mappingKey] => modelid
+                    [displayKey] => modelname
+                )
+
+        )
+
+    [inStr] => 
+    [fields] => 
+    [externSql] => 
+    [schema] => 
+    [fullTableName] => 
+    [hasOne] => 
+    [seqid] => 
+    [belongsTo] => 
+    [hasMany] => 
+    [manyToMany] => 
+    [meta] => 
+    [autoValidating] => 
+    [verifier] => 
+    [validateRules] => 
+    [createdTimeFields] => Array
+        (
+            [0] => CREATED
+            [1] => CREATED_ON
+            [2] => CREATED_AT
+        )
+
+    [updatedTimeFields] => Array
+        (
+            [0] => UPDATED
+            [1] => UPDATED_ON
+            [2] => UPDATED_AT
+        )
+
+    [autoLink] => 1
+    [dbo] => 
+    [links] => Array
+        (
+        )
+
+    [qtableName] => 
+    [qpk] => 
+    [pka] => 
+    [qpka] => 
+    [lastValidationResult] => 
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FLEA_Db_Driver_Oracle Object
+(
+    [NEXT_ID_SQL] => SELECT (%s.nextval) FROM DUAL
+    [CREATE_SEQ_SQL] => CREATE SEQUENCE %s START WITH %s
+    [DROP_SEQ_SQL] => DROP SEQUENCE %s
+    [META_COLUMNS_SQL] => SELECT CNAME, COLTYPE, WIDTH, SCALE, PRECISION, NULLS, DEFAULTVAL FROM COL
+ WHERE TNAME=%s ORDER BY COLNO
+    [PARAM_STYLE] => :
+    [HAS_AFFECTED_ROWS] => 1
+    [HAS_TRANSACTION] => 1
+    [HAS_SAVEPOINT] => 1
+    [RESULT_FIELD_NAME_LOWER] => 1
+    [NLS_DATE_FORMAT] => yyyy-mm-dd hh24:mi:ss
+    [_lastrs] => Resource id #26
+    [_commitMode] => 32
+    [TRUE_VALUE] => 1
+    [FALSE_VALUE] => 0
+    [NULL_VALUE] => NULL
+    [enableLog] => 
+    [INIT_SEQ_SQL] => 
+    [HAS_INSERT_ID] => 
+    [dsn] => Array
+        (
+            [driver] => Oracle
+            [host] => 172.20.4.1
+            [login] => spos_user3
+            [password] => 111111
+            [database] => 172.20.4.1:1521/trade
+            [port] => 
+            [options] => 
+            [prefix] => 
+            [schema] => 
+            [id] => Oracle://spos_user3:111111@172.20.4.1_/172.20.4.1:1521/trade//
+        )
+
+    [conn] => Resource id #25
+    [log] => Array
+        (
+        )
+
+    [querycount] => 1
+    [lasterr] => 
+    [lasterrcode] => 
+    [_insertId] => 
+    [_transCount] => 0
+    [_hasFailedQuery] => 
+    [_savepointStack] => Array
+        (
+        )
+
+)

@@ -1,0 +1,5 @@
+if(!$this->redis->connect(C('REDIS_HOST'),C('REDIS_PORT'))){
+             $ret = array("statusCode"=>"0","message"=>'Redis服务无法连接！',"navTabId"=>$this->navTab,
+    					"rel"=>"","forwardUrl"=>"","callbackType"=>"closeCurrent");
+    			echo json_encode($ret); exit;
+}

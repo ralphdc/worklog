@@ -1,0 +1,221 @@
+<div class="pageHeader">
+	<form   method="post" action="/index.php?s=/Admin/WeightService/groupSelect" onsubmit="return dwzSearch
+(this, 'dialog');">
+	<div class="searchBar">
+		<ul class="searchContent">
+			<li>
+				<label>组名:</label>
+				<input class="textInput" name="groupName" value="" type="text">
+			</li>
+		</ul>
+		<div class="subBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div>
+</div></li>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="button" multLookup="gpId"
+ warn="请选择组">选择带回</button></div></div></li>
+			</ul>
+		</div>
+	</div>
+	</form>
+</div>
+<div class="pageContent" style="overflow:auto;">
+	<table class="table" targetType="dialog" layoutH="112" width="100%">
+		<thead>
+			<tr>
+				<th width="30"><input type="checkbox" class="checkboxCtrl" group="gpId" /></th>
+				<th>序号</th>
+				<th>组ID</th>
+				<th>组名称</th>
+				<th>操作人</th>
+				<th>操作时间</th>
+				<th>描述</th>
+				<!-- <th>产品描述</th> -->
+			</tr>
+		</thead>
+		<tbody>
+		<tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:5,groupName
+:'add'}"/></td>
+							<td>1</td>
+							<td>5</td>
+							<td>add</td>
+							<td>ADMIN</td>
+							<td>2015-10-20 15:27:15.0</td>
+							<td></td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:12,groupName
+:'w34'}"/></td>
+							<td>2</td>
+							<td>12</td>
+							<td>w34</td>
+							<td>admin</td>
+							<td>2015-10-23 11:54:51.0</td>
+							<td></td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:13,groupName
+:'pay'}"/></td>
+							<td>3</td>
+							<td>13</td>
+							<td>pay</td>
+							<td>admin</td>
+							<td>2015-10-30 12:01:32.0</td>
+							<td>资金使用</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:15,groupName
+:'rty'}"/></td>
+							<td>4</td>
+							<td>15</td>
+							<td>rty</td>
+							<td>admin</td>
+							<td>2015-11-18 16:02:30.0</td>
+							<td></td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:16,groupName
+:'ralph'}"/></td>
+							<td>5</td>
+							<td>16</td>
+							<td>ralph</td>
+							<td>admin</td>
+							<td>2015-11-18 16:03:07.0</td>
+							<td></td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:17,groupName
+:'uuu'}"/></td>
+							<td>6</td>
+							<td>17</td>
+							<td>uuu</td>
+							<td>admin</td>
+							<td>2015-11-18 17:02:07.0</td>
+							<td>uuu</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:18,groupName
+:'444'}"/></td>
+							<td>7</td>
+							<td>18</td>
+							<td>444</td>
+							<td>admin</td>
+							<td>2015-11-18 17:03:37.0</td>
+							<td>444</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:19,groupName
+:'555'}"/></td>
+							<td>8</td>
+							<td>19</td>
+							<td>555</td>
+							<td>admin</td>
+							<td>2015-11-18 17:04:30.0</td>
+							<td>555</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:20,groupName
+:'666'}"/></td>
+							<td>9</td>
+							<td>20</td>
+							<td>666</td>
+							<td>admin</td>
+							<td>2015-11-18 17:06:00.0</td>
+							<td>666</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:21,groupName
+:'777'}"/></td>
+							<td>10</td>
+							<td>21</td>
+							<td>777</td>
+							<td>admin</td>
+							<td>2015-11-18 17:20:15.0</td>
+							<td>777</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:22,groupName
+:'888'}"/></td>
+							<td>11</td>
+							<td>22</td>
+							<td>888</td>
+							<td>admin</td>
+							<td>2015-11-18 17:21:28.0</td>
+							<td>888</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:23,groupName
+:'999'}"/></td>
+							<td>12</td>
+							<td>23</td>
+							<td>999</td>
+							<td>admin</td>
+							<td>2015-11-18 17:22:22.0</td>
+							<td>999</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:26,groupName
+:'222'}"/></td>
+							<td>13</td>
+							<td>26</td>
+							<td>222</td>
+							<td>admin</td>
+							<td>2015-11-18 17:36:46.0</td>
+							<td>222</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:29,groupName
+:'1901'}"/></td>
+							<td>14</td>
+							<td>29</td>
+							<td>1901</td>
+							<td>admin</td>
+							<td>2015-11-18 17:41:18.0</td>
+							<td>1901</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:30,groupName
+:'778899'}"/></td>
+							<td>15</td>
+							<td>30</td>
+							<td>778899</td>
+							<td>admin</td>
+							<td>2015-11-19 09:36:03.0</td>
+							<td>778899</td>
+						  </tr><tr onclick="checkTime(this);">
+							<td onclick="checkTime1(this);"><input type="checkbox" name="gpId" value="{groupId:16204,groupName
+:'zxcv'}"/></td>
+							<td>16</td>
+							<td>16204</td>
+							<td>zxcv</td>
+							<td>admin</td>
+							<td>2015-11-19 10:50:26.0</td>
+							<td>zxcv</td>
+						  </tr>		</tbody>
+	</table>
+	
+	<div class="panelBar">
+		<div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="dialogPageBreak({numPerPage:this.value})">
+				<option value="20" >20</option><option value="50" >50</option><option value="100" >100</option><option
+ value="200" >200</option>			</select>
+			<span>条，共18条</span>
+		</div>
+		<div class="pagination" targetType="dialog" totalCount="18" numPerPage="16" pageNumShown="5" currentPage
+="1"></div>
+	</div>
+</div>
+<script type="text/javascript">
+<!--
+	function checkTime(obj)
+	{
+		 var tempObj =  $(obj);
+	     var nowObj =tempObj.find('input');
+	     var checked = nowObj.attr('checked');
+	     if(checked){
+	  	   nowObj.removeAttr('checked');
+	     }else{
+	  	   nowObj.attr('checked','true');
+	  	 }
+	}
+	function checkTime1(obj)
+	{
+		 var tempObj =  $(obj);
+	     var nowObj =tempObj.find('input');
+		 var checked = nowObj.attr('checked');
+	     if(checked){
+	  	   nowObj.removeAttr('checked');
+	     }else{
+	  	   nowObj.attr('checked','true');
+	  	 }
+	}
+-->
+</script>

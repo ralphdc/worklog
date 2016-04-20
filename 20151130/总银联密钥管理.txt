@@ -1,0 +1,50 @@
+Array
+(
+    [0] => Array
+        (
+            [RM_MERCHNO] => 103440363000029
+            [RM_INTERFACE] => 15
+            [RR_ID] => 484
+            [RM_MERCHNAME] => 农行渠道4
+            [RM_STATUS] => 1
+            [RM_DATE] => 28-SEP-12
+            [RM_RECK] => 141
+            [MERPROPER] => 01035840
+            [CHNNEL_RRID] => 484
+            [RM_MERLEVEL] => 0001
+            [RM_USERID] => 
+            [MOD_USERID] => 江盛
+            [MOD_DATE] => 07-FEB-13
+            [MCC] => 5799
+            [ISEXPORT] => 0
+            [OPRSTATE] => 
+            [MCCDESC] => 
+            [INSTALMENT_FLAG] => 0
+            [GROUPNO] => 
+            [ADDPERSON] => 343
+            [ADDDATE] => 2012-08-13
+            [CHECKUSER] => 
+            [CHECKDATE] => 
+            [EN_RM_MERCHNAME] => 
+            [OUTFLAG] => 
+            [SID] => 58935D21E1B944980E3C7E9C3CC3A60C
+            [MERNO] => 103440363000029
+            [TERMNO] => 12J07526
+            [TMKINDEX] => 0
+            [TMKLEN] => 1
+            [TMK] => 0C88E95CBD334F9B699518C5C3D963B2
+            [TMK2] => 67560168396C6CD8E98B1D48341E0F1D
+            [ZMKINDEX] => 1
+            [ZMKLEN] => 
+            [PINKLEN] => 1
+            [PINK] => 483819E852CEEE754542F579E9B279F0
+            [MACKLEN] => 1
+            [MACK] => fmUc46GxQgf5xZXZHbD/EaKpgLKoPQUK4RQ1VzmCsRZ67rPN
+            [TRACKLEN] => 
+            [TRACK] => 
+            [RANDOM] => 
+            [ISUSE] => 1
+            [HSM_ID] => 6450C31B12092DDEDAE0F91BC8F4309E
+        )
+
+    [1] => Array

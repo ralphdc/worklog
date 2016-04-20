@@ -1,0 +1,18 @@
+<option selected="" value="1">运维镜像</option>
+<option value="2">生产</option>
+<option value="3">测试镜像</option>
+<option value="4">测试</option>
+<option value="5">开发</option>
+
+
+红色表示任何环境都未发布，
+
+绿色表示
+
+测试环境
+与
+运维镜像环境已发布，
+
+
+
+黑色表示测试镜像与生产环境已发布

@@ -1,0 +1,37 @@
+"data":{
+"topoInfo":[
+{"topoId":248,"topoName":"wl-20160329-0005","nodes":2,"createDate":"2016-03-30 17:47:00.0","environment":5,
+"topoType":1,"creator":"admin"}
+],
+
+
+"serverInfo":[
+
+{"id":17460,"ip":"172.20.0.248","hostName":"test8-PKL","vm":1,"environment":"1","deviceId":"17750","deviceName":"路由器",
+"iconUrl":"other.png","warns":"0"}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+
+
+ERR: //////////////////////////////
+request_by_other_v2 file_get_contents data is
+{"errorCode":0,"errorMessage":"SUCCESS",
+
+"data":{
+"sysName":"srvcntl01",
+"sysDescr":"Linux srvcntl01 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64",
+"sysUpTime":"1天20时33分49秒",
+"sysStatus":"RUNNING",
+"totalMemory":8061376,
+"usedMemory":6320816,
+"cpuUsages":[5,9,7,5],
+"totalStorage":53613273,
+"usedStorage":4683052,
+"storageDetail":[
+{"total":198337,"partition":"/boot","used":27800},
+{"total":4030688,"partition":"/dev/shm","used":0},
+{"total":49384248,"partition":"/","used":4655252}
+]},
+"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+
+

@@ -1,0 +1,91 @@
+<?php
+use Think\Model;
+
+// 节点模型
+class PoskeyModel extends CommonModel{// 
+   protected $_validate	=	array(
+       array('MERNO','require','商户名必须！'),
+       );
+   						
+	protected $fields = array( 'SID', 'MERNO','POSNO','TMKINDEX','TMKLEN','ISUSE', 'TMK1','ZMKINDEX1','ZMKINDEX2','HSM_ID','TMK2','ZMKLEN1','ZMKLEN2','ADDPERSON','ADDDATE');
+    protected $pk = 'SID';
+	protected $_auto	 =	 array(
+		array('SID','createGuid',self::MODEL_INSERT,'callback','1'),
+	);
+	
+	public function saveGet() {
+		$rowset = preg_split ( "/,/", $_GET['ids'] );
+		$rows = array ();
+		foreach ( $rowset as $row ) {
+			$data = preg_split ( "/;/", $row );
+				
+			if ($data [4] != '') {
+	
+				$reqr = "14";
+				$len = dechex ( strlen ( $data[0] ) );
+				$reqr .= strval ( $len ) . $data[0];
+				$tuxclt = new TuxcltModel();
+				$tux_ret = $tuxclt->tuxPostRequest ( "/WEBENC", $reqr );
+				list ( , $str ) = explode ( ':', $tux_ret );
+				$dat = array ();
+				$idx = 0;
+				$type = substr ( $str, $idx, 2 );
+				$idx += 2;
+				$resp = substr ( $str, $idx, 2 );
+				$idx += 2;
+				if ($type == '14')
+				{
+					if ($resp == '01') {
+						$len = hexdec ( substr ( $str, $idx, 2 ) );
+						$idx += 2;
+						$dat ['sid'] = substr ( $str, $idx, $len );
+						$idx += $len;
+						$len = hexdec ( substr ( $str, $idx, 2 ) );
+						$idx += 2;
+						$dat ['tmk1'] = substr ( $str, $idx, $len );
+						$idx += $len;
+						$dat ['tmk2'] = substr ( $str, $idx, $len );
+						$idx += $len;
+							
+					} else
+					{
+						$ret = array ("statusCode" => "0", "message" => '更新主密钥失败',
+								"navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "" );
+						echo json_encode ( $ret );
+						exit;
+	
+					}
+				}else {
+					$ret = array ("statusCode" => "0", "message" => '调用加密机服务失败',
+							"navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "" );
+					echo json_encode ( $ret );
+					exit;
+						
+						
+				}
+					
+			}
+			else {
+				$ret = array ("statusCode" => "0", "message" => '传输密钥索引为空，请添加后再获取主密钥密文', "navTabId" => $this->navTab, "forwardUrl" => "", "callbackType" => "closeCurrent" );
+				echo json_encode ( $ret );
+				exit;
+					
+			}
+			if($len == 16) $temp = 0;
+			if($len == 32) $temp = 1;
+			if($len == 48) $temp = 2;
+			//$row = $this->db->findByField(array('sid'=>$data[0]));
+			
+			$row = $this->where(array('SID'=>$data[0]))->find();
+			$row['SID'] = $data[0];
+			$row['TMK1'] = $dat['tmk1'];
+			$row['TMK2'] = $dat['tmk2'];
+			$row['TMKLEN'] = $temp;
+			$result = $this->save($row);
+			
+	
+		}
+		return $result;
+	}
+    
+}

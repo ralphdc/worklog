@@ -1,0 +1,60 @@
+[ 2016-03-28T14:00:19+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/lgServiceDetail/?sName=omp-zookeeper&_=1459144165654
+
+
+
+ERR: ////////////////////////////// request_by_other post is {"service":"omp-zookeeper","key":"topo.node.detail.logic","ver":"v1.0","encoding":"utf-8","timestamp":"2016-03-28 14:00:19","format":"json","data":{"submitor":"admin","envType":"5","environment":"5"},"envType":"5","signtype":"md5","cuserid":0}
+[ 2016-03-28T14:00:19+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/lgServiceDetail/?sName=omp-zookeeper&_=1459144165654
+ERR: ////////////////////////////// URL post is http://172.17.3.97:10056/omp/topo
+[ 2016-03-28T14:00:19+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/lgServiceDetail/?sName=omp-zookeeper&_=1459144165654
+ERR: request_by_other file_get_contents data is{"errorCode":0,"errorMessage":"SUCCESS","data":[],
+"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+
+
+
+[ 2016-03-28T14:00:19+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/lgServiceDetail/?sName=omp-zookeeper&_=1459144165654
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [2048] Declaration of GraphlogicController::index() should be compatible with that of CommonController::index() /home/wwwroot/Competence/Application/Service/Controller/GraphlogicController.class.php 第 3 行.
+NOTIC: [2048] Declaration of GraphlogicController::edit() should be compatible with that of CommonController::edit() /home/wwwroot/Competence/Application/Service/Controller/GraphlogicController.class.php 第 3 行.
+NOTIC: [8] Undefined index: MPOSSESS /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 285 行.
+NOTIC: [8] Undefined index: customProperty /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 339 行.
+NOTIC: [8] file_get_contents(): Content-type not specified assuming application/x-www-form-urlencoded /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 346 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2016-03-28T14:00:22+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/monitorNodeInfo
+ERR: ////////////////////////////// request_by_other post is {"services":"omp-zookeeper","topoIds":"310","key":"topo.info.summary.logic","ver":"v1.0","encoding":"utf-8","timestamp":"2016-03-28 14:00:22","format":"json","data":{"submitor":"admin","envType":"5","environment":"5"},"envType":"5","signtype":"md5","cuserid":0}
+[ 2016-03-28T14:00:22+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/monitorNodeInfo
+ERR: ////////////////////////////// URL post is http://172.17.3.97:10056/omp/topo
+[ 2016-03-28T14:00:22+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/monitorNodeInfo
+ERR: request_by_other file_get_contents data is{"errorCode":0,"errorMessage":"SUCCESS","data":{"topoInfo":[{"topoId":310,"topoName":"328child950","nodes":2,"createDate":"2016-03-28 10:35:31.0","environment":4,"topoType":2,"creator":"admin"}],"serviceInfo":[{"prName":"omp_zk","service":"omp-zookeeper","warns":0,"proIcon":"childtp.png","servFunc":"重命名test"}]},"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
+[ 2016-03-28T14:00:22+08:00 ] 172.20.0.206 /index.php/Service/Graphlogic/monitorNodeInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+NOTIC: [2048] Declaration of GraphlogicController::index() should be compatible with that of CommonController::index() /home/wwwroot/Competence/Application/Service/Controller/GraphlogicController.class.php 第 3 行.
+NOTIC: [2048] Declaration of GraphlogicController::edit() should be compatible with that of CommonController::edit() /home/wwwroot/Competence/Application/Service/Controller/GraphlogicController.class.php 第 3 行.
+NOTIC: [8] Undefined index: MPOSSESS /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 285 行.
+NOTIC: [8] Undefined index: customProperty /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 339 行.
+NOTIC: [8] file_get_contents(): Content-type not specified assuming application/x-www-form-urlencoded /home/wwwroot/Competence/Application/Service/Model/CommunicationModel.class.php 第 346 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+

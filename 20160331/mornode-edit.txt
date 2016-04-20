@@ -1,0 +1,38 @@
+Array
+(
+    [nodeId] => 17818
+    [template] => Array
+        (
+            [templateId] => 1
+            [templateName] => A
+            [templateType] => 1
+            [communityRead] => public
+            [communityWrite] => public
+            [userName] => li
+            [contextName] => 
+            [authProtocol] => 
+            [encryProtocol] => 
+            [port] => 123
+            [timeout] => 2
+            [retrys] => 3
+            [enabled] => 1
+        )
+
+    [serverId] => 17461
+    [ip] => 172.17.6.180
+    [hostName] => test9-OOP
+    [deviceType] => 反向代理
+    [osType] => win12
+    [groupName] => 1
+    [defaultInterval] => 1
+    [cpuInterval] => 3
+    [memoryInterval] => 3
+    [networkInterval] => 3
+    [diskInterval] => 3
+    [enabled] => 1
+    [createDate] => 1459405863000
+    [creator] => admin
+    [status] => 0
+    [templateId] => 1
+)
+

@@ -1,0 +1,42 @@
+xgdEditShow({"node":[{"xgdid":"76_1457059211298","text":"lg-02","px":1107,"py":76,"width":107,"height"
+:67,"alpha":1,"borderRadius":null,"fillColor":"22,124,255","fontColor":"255,255,255","scaleX":1,"scaleY"
+:1,"selected":true,"shadow":false,"visible":true,"zIndex":3,"dtype":"childtp"},{"xgdid":"MsgQueueReceiverStartUp_1457059218717"
+,"text":"MsgQueueReceiverStartUp","px":227,"py":96,"width":60,"height":57,"alpha":1,"borderRadius":null
+,"fillColor":"22,124,255","fontColor":"255,255,255","scaleX":1,"scaleY":1,"selected":false,"shadow":false
+,"visible":true,"zIndex":3,"dtype":"default"},{"xgdid":"tms_dll_1457059223922","text":"tms_dll","px"
+:457,"py":289,"width":60,"height":57,"alpha":1,"borderRadius":null,"fillColor":"22,124,255","fontColor"
+:"255,255,255","scaleX":1,"scaleY":1,"selected":false,"shadow":false,"visible":true,"zIndex":3,"dtype"
+:"default"},{"xgdid":"76_1457059255009","text":"lg-02","px":59,"py":196,"width":107,"height":67,"alpha"
+:1,"borderRadius":null,"fillColor":"22,124,255","fontColor":"255,255,255","scaleX":1,"scaleY":1,"selected"
+:false,"shadow":false,"visible":true,"zIndex":3,"dtype":"childtp"},{"xgdid":"75_1457059245572","text"
+:"lg-01","px":211,"py":378,"width":107,"height":67,"alpha":1,"borderRadius":null,"fillColor":"22,124
+,255","fontColor":"255,255,255","scaleX":1,"scaleY":1,"selected":false,"shadow":false,"visible":true
+,"zIndex":3,"dtype":"childtp"},{"xgdid":"75_1457059239100","text":"lg-01","px":1018,"py":410,"width"
+:107,"height":67,"alpha":1,"borderRadius":null,"fillColor":"22,124,255","fontColor":"255,255,255","scaleX"
+:1,"scaleY":1,"selected":false,"shadow":false,"visible":true,"zIndex":3,"dtype":"childtp"}],"link":[
+{"fromText":"lg-02","toText":"MsgQueueReceiverStartUp","fromId":"76_1457059211298","toId":"MsgQueueReceiverStartUp_1457059218717"
+,"width":32,"height":32,"alpha":1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059227054,"dragable":false
+,"fillColor":"22,124,255","font":"12px Consolas","fontColor":"255,255,255","lineJoin":"miter","lineWidth"
+:3,"shadow":false,"strokeColor":"255,255,0"},{"fromText":"MsgQueueReceiverStartUp","toText":"tms_dll"
+,"fromId":"MsgQueueReceiverStartUp_1457059218717","toId":"tms_dll_1457059223922","width":32,"height"
+:32,"alpha":1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059228533,"dragable":false,"fillColor":"22
+,124,255","font":"12px Consolas","fontColor":"255,255,255","lineJoin":"miter","lineWidth":3,"shadow"
+:false,"strokeColor":"255,255,0"},{"fromText":"tms_dll","toText":"lg-02","fromId":"tms_dll_1457059223922"
+,"toId":"76_1457059211298","width":32,"height":32,"alpha":1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059229944
+,"dragable":false,"fillColor":"22,124,255","font":"12px Consolas","fontColor":"255,255,255","lineJoin"
+:"miter","lineWidth":3,"shadow":false,"strokeColor":"255,255,0"},{"fromText":"lg-01","toText":"lg-02"
+,"fromId":"75_1457059239100","toId":"76_1457059211298","width":32,"height":32,"alpha":1,"arrowsRadius"
+:15,"bundleGap":12,"dcid":1457059241314,"dragable":false,"fillColor":"22,124,255","font":"12px Consolas"
+,"fontColor":"255,255,255","lineJoin":"miter","lineWidth":3,"shadow":false,"strokeColor":"255,255,0"
+},{"fromText":"lg-01","toText":"lg-01","fromId":"75_1457059245572","toId":"75_1457059239100","width"
+:32,"height":32,"alpha":1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059248719,"dragable":false,"fillColor"
+:"22,124,255","font":"12px Consolas","fontColor":"255,255,255","lineJoin":"miter","lineWidth":3,"shadow"
+:false,"strokeColor":"255,255,0"},{"fromText":"lg-02","toText":"lg-01","fromId":"76_1457059255009","toId"
+:"75_1457059245572","width":32,"height":32,"alpha":1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059258700
+,"dragable":false,"fillColor":"22,124,255","font":"12px Consolas","fontColor":"255,255,255","lineJoin"
+:"miter","lineWidth":3,"shadow":false,"strokeColor":"255,255,0"},{"fromText":"lg-02","toText":"MsgQueueReceiverStartUp"
+,"fromId":"76_1457059255009","toId":"MsgQueueReceiverStartUp_1457059218717","width":32,"height":32,"alpha"
+:1,"arrowsRadius":15,"bundleGap":12,"dcid":1457059260453,"dragable":false,"fillColor":"22,124,255","font"
+:"12px Consolas","fontColor":"255,255,255","lineJoin":"miter","lineWidth":3,"shadow":false,"strokeColor"
+:"255,255,0"}]})
+})

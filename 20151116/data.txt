@@ -1,0 +1,11 @@
+//2015-11-13 构造Tree数据；
+		if(checkIsArray($weightTree)){
+		    $xgd_arr = array();
+		    for($i=0; $i<count($weightTree); $i++){
+		        
+		        $xgd_arr[] = array('name'=>$weightTree[$i],'title'=>$weightTree[$i]);
+		    }
+		    $xgd_node = array('name'=>'组','title'=>'这是父节点');
+		    $xgd_node['children'] = $xgd_arr;
+		    $xgd_json_nodes = json_encode($xgd_node);
+		}

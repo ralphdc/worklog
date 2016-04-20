@@ -1,0 +1,48 @@
+public static byte[] pack(byte[] respMsg, Map<String, String> transParams) {
+
+        
+
+        //将json转换成String
+
+        String transParamsStr = JSON.toJSONString(transParams);
+
+        
+
+        // 转成byte[]
+
+        byte[] transParamsData={};
+
+                try {
+
+                        transParamsData = transParamsStr.getBytes("UTF-8");
+
+                } catch (UnsupportedEncodingException e) {
+
+                        // TODO Auto-generated catch block
+
+                        e.printStackTrace();
+
+                }
+
+                
+
+        // 计算transParamd长度
+
+        byte[] lent = new byte[2];
+
+                  lent = ByteUtil.intToLHbyte(transParamsData.length+2);
+
+    
+
+        //协议总长度
+
+        int len = 9+respMsg.length+transParamsData.length;//多加了2
+
+        byte[] resp = new byte[len];
+
+        byte[] lenByte = ByteUtil.intToLHbyte(len);
+
+        // 封装
+
+        
+

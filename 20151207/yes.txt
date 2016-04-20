@@ -1,0 +1,70 @@
+<form id="pagerForm" action="/index.php/Service/Operatmember/getUnaddedStaff" method="post">
+	<input type="hidden" name="pageNum" value="1"/>
+	<input type="hidden" name="numPerPage" value=""/>
+	<input type="hidden" name="id" value="16808" />
+	<!--
+	 <input type="hidden" name="_order" value=""/>  
+	 <input type="hidden" name="_sort" value=""/>
+	 <input type="hidden" name="pdName" value=""/> 
+	 -->
+</form>
+	
+
+<div class="pageContent">
+	<form id="addList" action="/index.php/Service/Operatmember/groupAddStaff" method="post" class="pageForm
+ required-validate" onsubmit="return validateCallback(this,submitStaffAjaxDone)">
+		<input type="hidden" name="id" value="16808" />
+		<table class="table" targetType="dialog" layoutH="112" width="100%">
+			<thead>
+				<tr>
+					<th width="30"><input type="checkbox" class="checkboxCtrl" group="stId[]" /></th>
+					<th>序号</th>
+					<th>联系人</th>
+					<th>通知方式</th>
+				</tr>
+			</thead>
+			<tbody>
+							<tr>
+											<td><div><input type="checkbox" value="2014" name="stId[]" /></div></td>
+						<td>3</td>
+						<td>黄峰<input type="hidden" name="staffName[2014]" value="黄峰" /></td>
+						<td><input type="checkbox" value="1" name="noticetype[2014]['msg']" />短消息  <input type="checkbox"
+ value="2" name="noticetype[2014]['email']" />邮件 </td>
+					</tr>			</tbody>
+		</table>
+		<div class="panelBar">
+			<div class="pages">
+				<span>显示</span>
+				<select class="combox" name="numPerPage" onchange="dialogPageBreak({numPerPage:this.value})">
+					<option value="20" >20</option><option value="50" >50</option><option value="100" >100</option>
+<option value="200" >200</option>				</select>
+				<span>条，共7条</span>
+			</div>
+			<div class="pagination" targetType="dialog" totalCount="7" numPerPage="1" pageNumShown="5" currentPage
+="3"></div>
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div>
+</div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button
+></div></div></li>
+			</ul>
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+
+function submitStaffAjaxDone(json){
+	
+	DWZ.ajaxDone(json);
+	if(json.statusCode > 0)
+	{
+		addTreeNode(operate_tree,json);
+		$.pdialog.closeCurrent();
+	}
+}
+
+
+</script>

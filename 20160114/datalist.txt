@@ -1,0 +1,14 @@
+Array (
+
+ [0] => Array ( 
+ [id] => 15882 
+ [ip] => 172.17.6.180
+ [hostName] => srvcntl01 
+ [room] => 4 
+ [cabinet] => 机柜11 
+ [product] => mpay,WEB 
+ [os] => linux2 
+ [vm] => 1 
+ ) 
+ [1] => Array ( 
+ [id] => 17362 [ip] => 172.17.3.86 [hostName] => optserver.mpay.com [room] => GDC [cabinet] => 机柜1 [product] => scm [os] => win12 [vm] => 1 ) ) 
