@@ -1,0 +1,19 @@
+[ 2016-04-21T11:33:20+08:00 ] 127.0.0.1 /index.php/Service/Graph/detail?id=17760&_=1461209599885
+ERR: //////////////////////////////request_by_other_v2 file_get_contents data is{"errorCode":0,"errorMessage":"SUCCESS","data":[
+
+
+
+{"time":1461209565182,"usages":[24,2],"avgUsage":13},
+{"time":1461209568187,"usages":[24,2],"avgUsage":13},
+{"time":1461209571191,"usages":[24,2],"avgUsage":13},
+{"time":1461209574196,"usages":[24,2],"avgUsage":13},
+{"time":1461209577211,"usages":[24,2],"avgUsage":13},
+{"time":1461209580205,"usages":[25,2],"avgUsage":14},
+{"time":1461209583207,"usages":[25,2],"avgUsage":14},
+{"time":1461209586213,"usages":[25,2],"avgUsage":14},
+{"time":1461209589216,"usages":[24,2],"avgUsage":13},
+{"time":1461209592233,"usages":[24,2],"avgUsage":13}
+
+
+
+],"pageNo":0,"pageSize":0,"totalPage":0,"total":0}
